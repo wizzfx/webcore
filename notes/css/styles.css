@@ -1,0 +1,179 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 12px;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+body {
+  color: #000;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  font-family: arial; }
+
+.note ul {
+  list-style: none; }
+
+@font-face {
+  font-family: "Indie Flower";
+  src: url("../fonts/indieflower-webfont.ttf") format("truetype"); }
+@media (max-width: 1023px) {
+  div.note {
+    float: left;
+    width: 100%;
+    margin: 0;
+    margin-top: 20px; }
+
+  section {
+    padding: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px; }
+
+  button {
+    margin: 0px; } }
+@media (min-width: 1024px) {
+  div.note {
+    width: 500px;
+    display: inline;
+    float: left;
+    margin: 10px;
+    margin-top: 10px; }
+
+  section {
+    padding: 10px;
+    margin: 0; }
+
+  button {
+    margin: 10px; } }
+nav {
+  margin: auto; }
+
+h1 {
+  font-family: Indie Flower;
+  font-size: 46px;
+  margin-top: 20px;
+  text-align: center; }
+
+button {
+  background-color: #c0def2;
+  border: 0px solid #6CB1E0;
+  padding: 10px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 3px 0px 0px #ccc; }
+  @media (max-width: 1023px) {
+    button {
+      font-size: 20px; } }
+
+.note {
+  min-height: 600px;
+  background-color: #fff7e6;
+  border: 1px solid #ffebbc;
+  line-height: 16px;
+  color: #000;
+  -webkit-box-shadow: 0 3px 0px 0px #ccc; }
+
+.note-title {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: arial;
+  color: #ebba51;
+  margin-left: 10px;
+  margin-top: 10px;
+  padding-bottom: 10px; }
+
+.note ul {
+  padding: 10px;
+  line-height: 16px; }
+
+.note ul li {
+  padding: 7px;
+  font-size: 16px;
+  line-height: 20px; }
+
+.face {
+  width: 10px;
+  height: 10px;
+  margin: 0;
+  padding: 0;
+  background: url("../img/smile_01.png"); }
+
+/* comments */
+
+/*# sourceMappingURL=styles.css.map */

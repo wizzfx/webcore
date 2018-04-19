@@ -1,0 +1,18 @@
+// mixins
+
+// 'Indie Flower', cursive;
+@mixin font-face-special($family, $file) {
+  @font-face {
+    font-family:  $family;
+    src: url('#{$path-font}/#{$file}-webfont.ttf') format('truetype');
+  }
+}
+
+// text mixin
+
+@mixin text-title($size, $weight: null, $family: null, $color: null) {
+   font-size: $size;
+   font-weight: $weight;
+   font-family: $family;
+   color: $color;
+}

@@ -1,0 +1,34 @@
+// variables
+
+// descriptive color variables
+
+$blue    :  #6CB1E0;
+$white   :  #ffffff;
+$black   :  #000000;
+$yellow  :  #fff7e6;
+
+// functional color variables
+
+$color-prim     : $white;
+$color-sec      : $black;
+$color-shadow   : rgba($black,.5);
+$blue-light     : lighten($blue, 20%);
+$yellow-dark    : darken($yellow, 20%);
+
+// font stack
+
+$stack-helvetica : 'Helvetica Neue', sans-serif;
+
+// border radius
+
+$br : 5px;
+
+// asset path
+
+$path-img : '../img';
+$path-font: '../fonts';
+
+// Media query breakpoints
+
+$brk-mobile: '(max-width: 1023px)';
+$brk-desktop   : '(min-width: 1024px)';
