@@ -1,6 +1,7 @@
 @import 'reset';
 @import 'body';
 @import 'variables';
+@import 'functions';
 @import 'extends';
 @import 'mixins';
 
@@ -48,3 +49,21 @@ button { background-color: $blue-light;
 
 // sass --watch scss:css
 /* comments */
+
+// nested selectors - nesting examples ------------ //
+
+// ">" child selector
+
+.main-nav {
+  color: $white;
+  a { color: $black; }
+  > h4 { color: $white ; }
+}
+
+//
+
+.main-body {
+  color: $white;
+  &-font { font-family: arial; }
+  color: rgba($black, 0.5);       // rgba color alpha
+}

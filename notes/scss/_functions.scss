@@ -1,0 +1,17 @@
+// functions
+
+@function divide($a, $b) {
+  @return ($a / $b);
+}
+
+.test {
+  line-height: divide(32px, 16px);   // divide(32px / 16px);
+ }
+
+@function px-to-pc($target, $context: $max-width) {
+  @return ($target / $context) * 100%;
+}
+
+.test2 {
+  width: px-to-pc(200px);
+}

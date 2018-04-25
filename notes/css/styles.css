@@ -87,6 +87,12 @@ body {
   font-size: 12px;
   font-family: arial; }
 
+.test {
+  line-height: 2; }
+
+.test2 {
+  width: 50%; }
+
 .note ul {
   list-style: none; }
 
@@ -175,5 +181,17 @@ button {
   background: url("../img/smile_01.png"); }
 
 /* comments */
+.main-nav {
+  color: #ffffff; }
+  .main-nav a {
+    color: #000000; }
+  .main-nav > h4 {
+    color: #ffffff; }
+
+.main-body {
+  color: #ffffff;
+  color: rgba(0, 0, 0, 0.5); }
+  .main-body-font {
+    font-family: arial; }
 
 /*# sourceMappingURL=styles.css.map */
