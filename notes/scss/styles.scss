@@ -5,43 +5,61 @@
 @import 'extends';
 @import 'mixins';
 
-@include font-face-special ('Indie Flower', indieflower);
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+// ---------------------------------------------------
+// @media
+// ---------------------------------------------------
 
 @media #{$brk-mobile} {
     div.note { float: left; width: 100%; margin: 0; margin-top: 20px;}
     section { padding: 0; margin-left: 20px; margin-right: 20px;
               margin-top: 20px;}
-    button { margin: 0px; }}
+}
 
 @media #{$brk-desktop} {
     div.note { width: 500px; display: inline; float: left; margin: 10px;
                margin-top: 10px;}
     section { padding: 10px; margin: 0; }
-    button { margin: 10px; }}
+}
 
-nav { margin: auto; }
-h1 { font-family: Indie Flower; font-size: 46px; margin-top: 20px;
-     text-align: center;}
+// ---------------------------------------------------
+// menu
+// ---------------------------------------------------
 
-button { background-color: $blue-light;
-         border: 0px solid $blue; padding: 10px;
-         border-radius: $br;
-         -webkit-box-shadow: 0 3px 0px 0px #ccc;
-         @media #{$brk-mobile} { font-size: 20px; }
-       }
+header { margin: 20px 0 0 20px;
+    ul li{ display: inline-block; padding: 5px; }
+    ul li:first-child { margin-left: -5px;}
+    ul li:nth-child(5) {  }
+}
 
-.note { min-height: 600px; background-color: #fff7e6;
-        border: 1px solid #ffebbc; line-height: 16px;
+.button-menu, .button-add {
+     background-color: darken($white, 4%);
+     border: 0px solid darken($white, 10%); padding: 10px;
+     border-radius: $br; margin: 0;
+     @media #{$brk-mobile} { font-size: 16px; }
+}
+
+.button-color1 { height: 20px; width: 20px; background-color: #fff7e6; padding:0; }
+.button-color2 { height: 20px; width: 20px; background-color: darken($white, 4%); padding:0;}
+
+a.title { color: darken($white, 30%); font-size: 22px; }
+
+// ---------------------------------------------------
+// menu end
+// ---------------------------------------------------
+
+.note { min-height: 600px; background-color: #fff7e6; font-weight: normal;
+        border: 1px solid #ffebbc; line-height: 22px;
         color: #000;
         -webkit-box-shadow: 0 3px 0px 0px #ccc;
+}
 
-  }
-
-.note-title { @include text-title(20px, bold, arial, #ebba51);
+.note-title { @include text-title(20px, bold, #ebba51);
               margin-left: 10px; margin-top: 10px;padding-bottom: 10px; }
 
-.note ul{ @extend %lists-clean;padding: 10px; line-height: 16px; }
-.note ul li { padding: 7px; font-size: 16px; line-height: 20px;}
+.note ul{ @extend %lists-clean;padding: 10px; line-height: 16px;}
+.note ul li { padding: 7px; line-height: 20px;font-size: 16px;}
 .face { width: 10px; height: 10px; margin: 0; padding: 0;
         background: url('#{$path-img}/smile_01.png'); }
 
@@ -67,3 +85,19 @@ button { background-color: $blue-light;
   &-font { font-family: arial; }
   color: rgba($black, 0.5);       // rgba color alpha
 }
+
+//
+// loops through lists with @each
+//
+
+$teachers: ('tom','mark','piter','bart');
+
+@each $teacher in $teachers {
+  .teacher-#{$teacher} {
+    background-image: url('img/#{$teacher}.jpg');
+  }
+}
+
+//
+// Loop through data in map with @each
+//

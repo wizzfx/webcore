@@ -36,3 +36,13 @@ $brk-desktop   : '(min-width: 1024px)';
 // max-width
 
 $max-width: 400px;
+
+
+// storing values in maps
+
+$breakpoints: (
+  'xs' : 575px,
+  'sm' : 576px,
+  'med': 590px,
+  'lg' : 900px,
+)

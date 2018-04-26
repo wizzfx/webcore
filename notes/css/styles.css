@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -41,7 +42,8 @@ a {
   padding: 0;
   font-size: 100%;
   vertical-align: baseline;
-  background: transparent; }
+  background: transparent;
+  text-decoration: none; }
 
 /* change colours to suit your needs */
 ins {
@@ -79,13 +81,16 @@ hr {
 input, select {
   vertical-align: middle; }
 
+button {
+  border: 0; }
+
 body {
   color: #000;
   background-color: #fff;
   margin: 0;
   padding: 0;
-  font-size: 12px;
-  font-family: arial; }
+  font-size: 22px;
+  font-family: 'Source Sans Pro', sans-serif; }
 
 .test {
   line-height: 2; }
@@ -96,9 +101,6 @@ body {
 .note ul {
   list-style: none; }
 
-@font-face {
-  font-family: "Indie Flower";
-  src: url("../fonts/indieflower-webfont.ttf") format("truetype"); }
 @media (max-width: 1023px) {
   div.note {
     float: left;
@@ -110,10 +112,7 @@ body {
     padding: 0;
     margin-left: 20px;
     margin-right: 20px;
-    margin-top: 20px; }
-
-  button {
-    margin: 0px; } }
+    margin-top: 20px; } }
 @media (min-width: 1024px) {
   div.note {
     width: 500px;
@@ -124,41 +123,53 @@ body {
 
   section {
     padding: 10px;
-    margin: 0; }
+    margin: 0; } }
+header {
+  margin: 20px 0 0 20px; }
+  header ul li {
+    display: inline-block;
+    padding: 5px; }
+  header ul li:first-child {
+    margin-left: -5px; }
 
-  button {
-    margin: 10px; } }
-nav {
-  margin: auto; }
-
-h1 {
-  font-family: Indie Flower;
-  font-size: 46px;
-  margin-top: 20px;
-  text-align: center; }
-
-button {
-  background-color: #c0def2;
-  border: 0px solid #6CB1E0;
+.button-menu, .button-add {
+  background-color: whitesmoke;
+  border: 0px solid #e6e6e6;
   padding: 10px;
   border-radius: 5px;
-  -webkit-box-shadow: 0 3px 0px 0px #ccc; }
+  margin: 0; }
   @media (max-width: 1023px) {
-    button {
-      font-size: 20px; } }
+    .button-menu, .button-add {
+      font-size: 16px; } }
+
+.button-color1 {
+  height: 20px;
+  width: 20px;
+  background-color: #fff7e6;
+  padding: 0; }
+
+.button-color2 {
+  height: 20px;
+  width: 20px;
+  background-color: whitesmoke;
+  padding: 0; }
+
+a.title {
+  color: #b3b3b3;
+  font-size: 22px; }
 
 .note {
   min-height: 600px;
   background-color: #fff7e6;
+  font-weight: normal;
   border: 1px solid #ffebbc;
-  line-height: 16px;
+  line-height: 22px;
   color: #000;
   -webkit-box-shadow: 0 3px 0px 0px #ccc; }
 
 .note-title {
   font-size: 20px;
   font-weight: bold;
-  font-family: arial;
   color: #ebba51;
   margin-left: 10px;
   margin-top: 10px;
@@ -170,8 +181,8 @@ button {
 
 .note ul li {
   padding: 7px;
-  font-size: 16px;
-  line-height: 20px; }
+  line-height: 20px;
+  font-size: 16px; }
 
 .face {
   width: 10px;
@@ -193,5 +204,17 @@ button {
   color: rgba(0, 0, 0, 0.5); }
   .main-body-font {
     font-family: arial; }
+
+.teacher-tom {
+  background-image: url("img/tom.jpg"); }
+
+.teacher-mark {
+  background-image: url("img/mark.jpg"); }
+
+.teacher-piter {
+  background-image: url("img/piter.jpg"); }
+
+.teacher-bart {
+  background-image: url("img/bart.jpg"); }
 
 /*# sourceMappingURL=styles.css.map */
