@@ -1,5 +1,17 @@
-// extends 
+// extends
 
 %lists-clean {
   list-style: none;
 }
+
+%button-default {
+  border: 0px solid darken($white, 10%); padding: 10px;
+  border-radius: $br; margin: 0;
+  @media #{$brk-mobile} { font-size: 16px; }
+}
+
+%button-colors {
+  padding: 0; height: 20px; width: 20px; background-color: #fff7e6;
+}
+
+// default notes look

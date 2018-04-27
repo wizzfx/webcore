@@ -111,6 +111,21 @@ body {
 .note ul {
   list-style: none; }
 
+.button-menu, .button-add {
+  border: 0px solid #e6e6e6;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 0; }
+  @media (max-width: 1023px) {
+    .button-menu, .button-add {
+      font-size: 16px; } }
+
+.button-color1, .button-color2 {
+  padding: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #fff7e6; }
+
 @media (max-width: 1023px) {
   div.note {
     float: left;
@@ -142,44 +157,34 @@ header {
   header ul li:first-child {
     margin-left: -5px; }
 
-.button-menu, .button-add {
-  background-color: whitesmoke;
-  border: 0px solid #e6e6e6;
-  padding: 10px;
-  border-radius: 5px;
-  margin: 0; }
-  @media (max-width: 1023px) {
-    .button-menu, .button-add {
-      font-size: 16px; } }
-
-.button-menu:active, .button-add:active {
-  background-color: #e6e6e6; }
-
 .colors-container {
   display: inline-block;
   float: left; }
 
-.button-color1, .button-color2 {
-  padding: 0;
-  height: 20px;
-  width: 20px;
-  background-color: #fff7e6; }
+.button-menu {
+  background-color: whitesmoke; }
+.button-menu:active {
+  background-color: #e6e6e6; }
+.button-add {
+  background-color: #5fcf80;
+  color: #ffffff; }
+.button-add:active {
+  background-color: #3ac162; }
 
+.button-color1 {
+  background-color: #fff7e6; }
 .button-color1:active {
   background-color: #ffeabd; }
-
 .button-color2 {
   background-color: whitesmoke; }
-  .button-color2:active {
-    background-color: #ebebeb; }
+.button-color2:active {
+  background-color: #ebebeb; }
 
 a.title {
   color: #b3b3b3;
   font-size: 22px; }
   a.title:active {
     color: #1a1a1a; }
-  a.title:hover {
-    color: #e6e6e6; }
 
 .note {
   min-height: 600px;
