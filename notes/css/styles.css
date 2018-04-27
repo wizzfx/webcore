@@ -43,7 +43,8 @@ a {
   font-size: 100%;
   vertical-align: baseline;
   background: transparent;
-  text-decoration: none; }
+  text-decoration: none;
+  outline: none; }
 
 /* change colours to suit your needs */
 ins {
@@ -82,6 +83,15 @@ input, select {
   vertical-align: middle; }
 
 button {
+  border: 0;
+  outline: none; }
+
+button:active {
+  outline: none;
+  border: 0; }
+
+button:hover {
+  outline: none;
   border: 0; }
 
 body {
@@ -142,21 +152,34 @@ header {
     .button-menu, .button-add {
       font-size: 16px; } }
 
-.button-color1 {
+.button-menu:active, .button-add:active {
+  background-color: #e6e6e6; }
+
+.colors-container {
+  display: inline-block;
+  float: left; }
+
+.button-color1, .button-color2 {
+  padding: 0;
   height: 20px;
   width: 20px;
-  background-color: #fff7e6;
-  padding: 0; }
+  background-color: #fff7e6; }
+
+.button-color1:active {
+  background-color: #ffeabd; }
 
 .button-color2 {
-  height: 20px;
-  width: 20px;
-  background-color: whitesmoke;
-  padding: 0; }
+  background-color: whitesmoke; }
+  .button-color2:active {
+    background-color: #ebebeb; }
 
 a.title {
   color: #b3b3b3;
   font-size: 22px; }
+  a.title:active {
+    color: #1a1a1a; }
+  a.title:hover {
+    color: #e6e6e6; }
 
 .note {
   min-height: 600px;
@@ -165,6 +188,7 @@ a.title {
   border: 1px solid #ffebbc;
   line-height: 22px;
   color: #000;
+  padding-bottom: 15px;
   -webkit-box-shadow: 0 3px 0px 0px #ccc; }
 
 .note-title {
