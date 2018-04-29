@@ -22,6 +22,16 @@ time, mark, audio, video {
 body {
   line-height: 1; }
 
+a:focus, a:active,
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+select::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner {
+  border: 0;
+  outline: 0; }
+
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block; }
@@ -44,7 +54,13 @@ a {
   vertical-align: baseline;
   background: transparent;
   text-decoration: none;
-  outline: none; }
+  outline-style: none; }
+
+a:active {
+  outline-style: none; }
+
+a:focus {
+  outline-style: none; }
 
 /* change colours to suit your needs */
 ins {
@@ -97,7 +113,7 @@ button:hover {
 body {
   color: #000;
   background-color: #fff;
-  margin: 20px;
+  margin: 0.5em;
   padding: 0;
   font-size: 22px;
   font-family: 'Source Sans Pro', sans-serif; }
@@ -112,35 +128,34 @@ body {
   list-style: none; }
 
 .button-menu, .button-add {
-  border: 0px solid #e6e6e6;
-  padding: 10px;
+  border: 0 solid #e6e6e6;
+  width: 100%;
+  padding: 1.3em 0 1.3em 0;
+  margin: 0;
   border-radius: 5px;
-  margin: 0; }
+  font-size: 1.2em;
+  font-weight: bold; }
 
 .button-color1, .button-color2 {
   padding: 0;
-  height: 20px;
-  width: 20px;
+  height: 2em;
+  width: 2em;
   background-color: #fff7e6; }
-
-@media (max-width: 874px) {
-  div.note-grid {
-    grid-template-columns: 1fr;
-    grid-auto-rows: minmax(600px, auto);
-    grid-gap: 20px; } }
-header {
-  margin: 0 0 0 0; }
-  header ul li {
-    display: inline-block; }
-  header ul li:first-child {
-    margin-left: 0; }
 
 .colors-container {
   display: inline-block;
   float: left; }
 
+.button:focus, .button:active, .button:hover {
+  outline: none; }
+
+.button::-moz-focus-inner {
+  border: 0; }
+
 .button-menu {
-  background-color: whitesmoke; }
+  margin-bottom: 0.5em;
+  background-color: whitesmoke;
+  color: #4d4d4d; }
 .button-menu:active {
   background-color: #e6e6e6; }
 .button-add {
@@ -151,49 +166,68 @@ header {
 
 .button-color1 {
   background-color: #fff7e6;
-  margin-top: 8px; }
+  margin-left: auto;
+  border: 0.15em solid #ffefcd;
+  margin-right: 0.2em; }
 .button-color1:active {
   background-color: #ffeabd; }
+.button-color1:hover {
+  border: 0.15em solid #ffefcd;
+  margin-right: 0.2em; }
 .button-color2 {
   background-color: whitesmoke;
-  margin-top: 8px; }
+  margin-left: auto;
+  border: 0.15em solid #f0f0f0; }
 .button-color2:active {
   background-color: #ebebeb; }
+.button-color2:hover {
+  border: 0.15em solid #f0f0f0; }
 
 div.nav-title {
-  margin-top: 7px; }
-  div.nav-title a {
-    color: #b3b3b3;
-    font-size: 22px; }
-    div.nav-title a:active {
-      color: #1a1a1a; }
+  float: left;
+  padding-top: 0.1em; }
 
-.nav-grid {
-  display: grid;
-  padding-bottom: 20px;
-  max-width: 400px;
-  grid-template-columns: repeat(minmax(100px, 400px));
-  grid-auto-flow: column;
-  grid-auto-rows: auto;
-  grid-gap: 0; }
+.nav-title a {
+  color: #b3b3b3;
+  font-size: 2em; }
+  .nav-title a:active {
+    color: #1a1a1a; }
+
+header {
+  margin: 0; }
+
+.color-theme {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1em; }
+
+div.nav-colors {
+  margin-top: 0;
+  margin-left: auto; }
+
+.nav-menu {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1em; }
 
 .note-grid {
-  display: grid;
-  max-width: auto;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 400px));
-  grid-auto-rows: minmax(400px, auto);
-  grid-gap: 20px; }
+  float: left;
+  min-width: 16em; }
 
 .item {
-  min-height: 600px;
-  width: auto;
+  min-height: 16em;
+  width: 100%;
+  float: left;
+  align-items: stretch;
   background-color: #fff7e6;
   font-weight: normal;
   border: 1px solid #ffebbc;
-  line-height: 22px;
+  line-height: 1em;
   color: #000;
-  padding-bottom: 15px;
-  -webkit-box-shadow: 0 3px 0px 0px #ccc; }
+  padding-bottom: 0.6em;
+  -webkit-box-shadow: 0 3px 0px 0px #d9d9d9;
+  margin-bottom: 1.1em; }
 
 .note-title {
   font-size: 20px;
@@ -220,11 +254,14 @@ div.nav-title {
   background: url("../img/smile_01.png"); }
 
 footer p {
+  clear: both;
+  float: left;
+  margin-left: auto;
   color: #b3b3b3;
-  font-size: 14px;
-  width: auto;
-  text-align: center;
-  padding: 50px 0 30px 0px; }
+  font-size: 1.15em;
+  width: 100%;
+  padding: 50px 0 50px 0px;
+  text-align: center; }
 
 /* comments */
 .main-nav {

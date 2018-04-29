@@ -7,6 +7,7 @@
   <title>Web Core</title>
   <meta name="description" content="documentation">
   <meta name="author" content="wizzfx">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="css/styles.css">
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
@@ -22,17 +23,21 @@
 
     <header>
 
-        <div class="nav-grid">
-        <div class="nav-item"><button type="button" class="button-menu" onclick="alert('+ add note')">menu</button></div>
-        <div class="nav-item"><button type="button" class="button-menu" onclick="alert('+ add note')">groups</button></div>
-        <div class="nav-item"><button type="button" class="button-add" onclick="alert('+ add note')">+ add note</button></div>
-
-        <div class="nav-item"><button type="button" class="button-color1" onclick=""></button></div>
-        <div class="nav-item"><button type="button" class="button-color2" onclick=""></button></div>
-
-        <div class="nav-title"><a href="">MY NOTES</a></div>
-
+        <div class="color-theme">
+            <div class="nav-title">
+            <a href="">my notes</a>
+            </div>
+            <div class="nav-colors">
+            <button type="button" class="button-color1" onclick=""></button>
+            <button type="button" class="button-color2" onclick=""></button>
+            </div>
         </div>
+
+        <div class="nav-menu">
+            <div class="nav-item"><button type="button" class="button-menu" onclick="alert('+ add note')">menu</button></div>
+            <div class="nav-item"><button type="button" class="button-menu" onclick="alert('+ add note')">groups</button></div>
+            <div class="nav-item"><button type="button" class="button-add" onclick="alert('+ add note')">+ add note</button></div>
+        </div> <!-- nav menu end  -->
 
     </header>
     <section>
@@ -67,6 +72,7 @@
       <li><p class='note-title'>web development stuff:</p></li>
       <li>- SASS ( CSS Processor )</li>
       <li>- ( CSS Framework ) Bootstrap, Materialize CSS, UIkit</li>
+      <li>- Stylus.com ( CSS stuff collection )</li>
       <li>- GitHub ( version control system )</li>
       <li>- CSS grid system, responsive layouts.</li>
       <li>- Vanilla Java Script - basic JS</li>
@@ -85,6 +91,7 @@
       <li>- MongoDB ( Firebase - cloude database by google, can be usefull with mongodb )</li>
       <li>- REST APIS ( how rest api work )</li>
       <li>- Server side Frameworks ( Express for JS, Django for Python )</li>
+      <li>- Electron ( framework for desktop apps using web technology )</li>
     </ul>
     </div>
 
