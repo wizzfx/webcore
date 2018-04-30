@@ -142,6 +142,16 @@ body {
   width: 2em;
   background-color: #fff7e6; }
 
+.smile_01, .important, .done {
+  background: url("../img/emoticons_01.png");
+  line-height: 22px;
+  position: relative;
+  margin-left: 1em;
+  top: 0.6em;
+  height: 30px;
+  width: 30px;
+  display: inline-block; }
+
 .colors-container {
   display: inline-block;
   float: left; }
@@ -262,6 +272,15 @@ footer p {
   width: 100%;
   padding: 50px 0 50px 0px;
   text-align: center; }
+
+.smile_01 {
+  background-position: -50px -10px; }
+
+.important {
+  background-position: 80px -10px; }
+
+.done {
+  background-position: 120px -13px; }
 
 /* comments */
 .main-nav {

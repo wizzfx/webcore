@@ -126,6 +126,23 @@ footer p{
     text-align: center;
 }
 
+// ---------------------------------------------------
+// emoticons
+// ---------------------------------------------------
+
+.smile_01 {
+  @extend %emoticon-defaults;
+  background-position: -50px -10px;
+}
+.important {
+    @extend %emoticon-defaults;
+    background-position: 80px -10px;
+}
+.done {
+    @extend %emoticon-defaults;
+    background-position: 120px -13px;
+}
+
 // sass --watch scss:css
 /* comments */
 
