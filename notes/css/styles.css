@@ -282,6 +282,17 @@ footer p {
 .done {
   background-position: 120px -13px; }
 
+div.code {
+  background-color: #414859;
+  width: auto;
+  padding: 1em;
+  font-family: Consolas;
+  font-size: 1em;
+  border-radius: 5px;
+  color: #f2f2f2; }
+  div.code p {
+    font-size: 1em; }
+
 /* comments */
 .main-nav {
   color: #ffffff; }
