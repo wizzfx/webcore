@@ -17,7 +17,13 @@
   <![endif]-->
 
 </head>
+            <script>
+                function myFunction() {
+                    document.getElementById("myDropdown").classList.toggle("show");
+                    document.getElementById("gr-arrow").classList.toggle("ar-show");
 
+                }
+            </script>
 <body>
 
 
@@ -35,8 +41,12 @@
 
         <div class="nav-menu">
             <div class="nav-item"><button type="button" class="button-menu" onclick="alert('+ add note')">menu</button></div>
-            <div class="nav-item"><button type="button" class="button-menu" onclick="alert('+ add note')">groups</button></div>
-            <div class="nav-item"><button type="button" class="button-add" onclick="alert('+ add note')">+ add note</button></div>
+            <div class="nav-item-groups"><button type="button" class="button-menu" onclick="myFunction()">groups<i id="gr-arrow" class="arrow"></i></button></div>
+            <div id="myDropdown" class="groups-content" >
+                <div class="nav-item"><button type="button" class="button-menu-drop" onclick="location.href='javascript_stuff.html';">javascript stuff</button></div>
+                <div class="nav-item"><button type="button" class="button-menu-drop" onclick="location.href='ideas.html';">ideas</button></div>
+            </div>
+            <div class="nav-item"><button type="button" class="button-add" onclick="prompt()">+ add note</button></div>
         </div> <!-- nav menu end  -->
 
     </header>
@@ -146,7 +156,6 @@
 <footer>
 <p>Copyright © 2018 MyNotes. All rights reserved.</p>
 </footer>
-
 
 </body>
 </html>

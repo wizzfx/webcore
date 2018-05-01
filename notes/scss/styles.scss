@@ -1,10 +1,10 @@
 @import 'reset';
-@import 'body';
 @import 'variables';
+@import 'body';
+@import 'utilities';
 @import 'functions';
 @import 'extends';
 @import 'mixins';
-
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 
 // ---------------------------------------------------
@@ -20,18 +20,47 @@
 // menu
 // ---------------------------------------------------
 
+.arrow {
+     border: solid darken($white, 70%);
+     border-width: 0 0.3em 0.3em 0;
+     display: none;
+     position: absolute;
+     top: 10.7em;
+     margin: 0 auto 0 1em;
+     padding: 4px;
+     transform: rotate(45deg);
+     -webkit-transform: rotate(45deg);
+}
+.ar-show { display: inline-block; }
+
+.groups-content {
+      display: block;
+      height: 0;
+      overflow: auto;
+      z-index: 1;
+      transition: height 0.3s ease-out;
+      &::-webkit-scrollbar { display: none; }
+      -ms-overflow-style: none;
+      overflow: -moz-scrollbars-none;
+}
+
+.show {
+      display:block; height: 10.2em;
+      transition: height 0.3s ease-in;
+}
 
 .colors-container { display: inline-block; float: left; }
 
 .button:focus, .button:active, .button:hover { outline: none; }
 .button::-moz-focus-inner { border: 0; }
 .button {
-     &-menu {
+     &-menu, &-menu-drop {
        @extend %button-default; margin-bottom: 0.5em;
        background-color: darken($white, 4%);
        color: darken($white, 70%); }
-     &-menu:active {
+     &-menu:active, &-menu-drop , {
        background-color: darken($white, 10%); }
+     &-menu-drop { background-color: darken($white, 70%); color: $white; }
      &-add {
        @extend %button-default;
        background-color: #5fcf80;

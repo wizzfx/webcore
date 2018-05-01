@@ -116,8 +116,14 @@ body {
   margin: 0.5em;
   padding: 0;
   font-size: 22px;
-  font-family: 'Source Sans Pro', sans-serif; }
+  font-family: "Source Sans Pro", sans-serif; }
 
+/*
+@if variable-exists(font-url--main) {
+  @import url($font-url--main);
+}
+
+*/
 .test {
   line-height: 2; }
 
@@ -127,14 +133,15 @@ body {
 .item ul {
   list-style: none; }
 
-.button-menu, .button-add {
+.button-menu, .button-menu-drop, .button-add {
   border: 0 solid #e6e6e6;
   width: 100%;
   padding: 1.3em 0 1.3em 0;
   margin: 0;
   border-radius: 5px;
   font-size: 1.2em;
-  font-weight: bold; }
+  font-weight: bold;
+  cursor: pointer; }
 
 .button-color1, .button-color2 {
   padding: 0;
@@ -152,6 +159,36 @@ body {
   width: 30px;
   display: inline-block; }
 
+.arrow {
+  border: solid #4d4d4d;
+  border-width: 0 0.3em 0.3em 0;
+  display: none;
+  position: absolute;
+  top: 10.7em;
+  margin: 0 auto 0 1em;
+  padding: 4px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg); }
+
+.ar-show {
+  display: inline-block; }
+
+.groups-content {
+  display: block;
+  height: 0;
+  overflow: auto;
+  z-index: 1;
+  transition: height 0.3s ease-out;
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none; }
+  .groups-content::-webkit-scrollbar {
+    display: none; }
+
+.show {
+  display: block;
+  height: 10.2em;
+  transition: height 0.3s ease-in; }
+
 .colors-container {
   display: inline-block;
   float: left; }
@@ -162,12 +199,15 @@ body {
 .button::-moz-focus-inner {
   border: 0; }
 
-.button-menu {
+.button-menu, .button-menu-drop {
   margin-bottom: 0.5em;
   background-color: whitesmoke;
   color: #4d4d4d; }
-.button-menu:active {
+.button-menu:active, .button-menu-drop {
   background-color: #e6e6e6; }
+.button-menu-drop {
+  background-color: #4d4d4d;
+  color: #ffffff; }
 .button-add {
   background-color: #5fcf80;
   color: #ffffff; }
