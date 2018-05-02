@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Web Core</title>
+  <meta name="description" content="documentation">
+  <meta name="author" content="wizzfx">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/prism.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+
+</head>
+            <script>
+                function myFunction() {
+                    document.getElementById("myDropdown").classList.toggle("show");
+                    document.getElementById("gr-arrow").classList.toggle("ar-show");
+
+                }
+            </script>
+<body>
+
+
+    <header>
+
+        <div class="color-theme">
+            <div class="nav-title">
+            <a href=""><script src="lib/mynotes.js"></script><script>document.write(' - javascript_stuff')</script></a>
+            </div>
+            <div class="nav-colors">
+            <button type="button" class="button-color1" onclick=""></button>
+            <button type="button" class="button-color2" onclick=""></button>
+            </div>
+        </div>
+
+        <div class="nav-menu">
+            <div class="nav-item"><button type="button" class="button-menu" onclick="alert('+ add note')">menu</button></div>
+            <div class="nav-item-groups"><button type="button" class="button-menu" onclick="myFunction()">groups<i id="gr-arrow" class="arrow"></i></button></div>
+            <div id="myDropdown" class="groups-content" >
+                <div class="nav-item"><button type="button" class="button-menu-drop" onclick="location.href='javascript_stuff.html';">javascript stuff</button></div>
+                <div class="nav-item"><button type="button" class="button-menu-drop" onclick="location.href='ideas.html';">ideas</button></div>
+            </div>
+            <div class="nav-item"><button type="button" class="button-add" onclick="prompt()">+ add note</button></div>
+        </div> <!-- nav menu end  -->
+
+    </header>
+    <section>
+    <div class="note-grid">
+
+      <div class="item">
+      <ul>
+        <li><p class='note-title'>JavaScript stuff</p></li>
+        <li>
+<!--  code  start -->
+<pre><code class="language-javascript">var test = 10;
+var start = 'test';
+</code></pre>
+<!--  code  end -->
+        </li>
+
+      </ul>
+      </div>
+
+
+    </div>
+    </section>
+
+<footer>
+<p>Copyright © 2018 MyNotes. All rights reserved.</p>
+</footer>
+
+<script src="lib\prism.js"></script>
+
+</body>
+</html>

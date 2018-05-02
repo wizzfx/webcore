@@ -10,6 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/prism.css">
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 
   <!--[if lt IE 9]>
@@ -21,8 +22,7 @@
                 function myFunction() {
                     document.getElementById("myDropdown").classList.toggle("show");
                     document.getElementById("gr-arrow").classList.toggle("ar-show");
-
-                }
+            }
             </script>
 <body>
 
@@ -31,7 +31,7 @@
 
         <div class="color-theme">
             <div class="nav-title">
-            <a href=""><script src="lib/mynotes.js"></script></a>
+            <a href=""><script src="lib/mynotes.js" onclick="index.html"></script></a>
             </div>
             <div class="nav-colors">
             <button type="button" class="button-color1" onclick=""></button>
@@ -76,10 +76,13 @@
       <li></li>
       <li>- pushing new repo to empty repo on GitHub</li>
       <li>
-          <div class="code">
-          <p>git remote add origin http://repourl</p>
-          <p>git push -u origin master</p>
-          </div>
+
+<!--  code  start -->
+<pre><code class="language-">git remote add origin http://repourl
+git push -u origin master
+</code></pre>
+<!--  code  end -->
+
       </li>
     </ul>
     </div>
@@ -88,12 +91,15 @@
     <ul>
       <li><p class='note-title'>JavaScript stuff</p></li>
       <li>
-        <div class="code">
-        <p></p>
-        <p></p>
-        </div>
-      </li>
 
+<!--  code  start -->
+<pre><code class="language-javascript">var test = 10;
+var start = 'test';
+function start(){}
+</code></pre>
+<!--  code  end -->
+
+      </li>
     </ul>
     </div>
 
@@ -146,7 +152,7 @@
       <li><p class='note-title'>tasks:</p></li>
       <li>- digital art job website :)</li>
 
-      <li>- coś tam coś tam.</li>
+      <li>- Lightning Machine </li>
     </ul>
     </div>
 
@@ -156,6 +162,8 @@
 <footer>
 <p>Copyright © 2018 MyNotes. All rights reserved.</p>
 </footer>
+
+<script src="lib\prism.js"></script>
 
 </body>
 </html>

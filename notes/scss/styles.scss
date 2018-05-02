@@ -21,12 +21,13 @@
 // ---------------------------------------------------
 
 .arrow {
+     margin: 0;
      border: solid darken($white, 70%);
      border-width: 0 0.3em 0.3em 0;
      display: none;
      position: absolute;
-     top: 10.7em;
-     margin: 0 auto 0 1em;
+     top: 11em;
+     right: 3em;
      padding: 4px;
      transform: rotate(45deg);
      -webkit-transform: rotate(45deg);
@@ -45,7 +46,7 @@
 }
 
 .show {
-      display:block; height: 10.2em;
+      display:block; height: 10.5em;
       transition: height 0.3s ease-in;
 }
 
@@ -118,6 +119,7 @@ div.nav-colors {
 .note-grid {
     float: left;
     min-width: 16em;
+    width: 99.5%;
     //grid-template-columns: repeat(auto-fill, minmax(400px, 400px));
     //grid-auto-rows: minmax(400px, auto);
 }
@@ -125,7 +127,7 @@ div.nav-colors {
 .item { min-height: 16em; width: 100%; float: left;
         align-items: stretch;
         background-color: #fff7e6; font-weight: normal;
-        border: 1px solid #ffebbc; line-height: 1em;
+        border: 1px solid #ffebbc; line-height: auto;
         color: #000; padding-bottom: 0.6em;
         -webkit-box-shadow: 0 3px 0px 0px darken($white, 15%);
         margin-bottom: 1.1em;
@@ -175,6 +177,7 @@ footer p{
 // ---------------------------------------------------
 // code styling
 // ---------------------------------------------------
+
 
 div.code {
   background-color: lighten(#2b303b, 10%);
