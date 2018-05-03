@@ -127,14 +127,98 @@ float: right;
     </li>
     <li>:only-child and :empty selectors</li>
     <li>'Begin With' and 'Ends With' attribute selectors</li>
+    <li>'Contains' attribute selectors</li>
     <li>Examples:</li>
     <li>
 <!--  code  start -->
-<pre><code class="language-css">/*   ^ begin with, $ end with   */
+<pre><code class="language-css">/*   ^ begin with, $ end with  */
+/*   * contains   */
 a[href^="http://"] { }
-a[href$=".jpg"] { }</code></pre>
+a[href$=".jpg"] { }
+a[href*="download"] { }
+img[src*="thumbnail"] { }</code></pre>
 <!--  code  end -->
     </li>
+    <li>Element State Pseudo-Classes</li>
+    <li>:disabled, :checked</li>
+    <li>Examples:</li>
+    <li>
+<!--  code  start -->
+<pre><code class="language-css">input:focus, textarea:focus {
+  border-color: green;
+}
+
+input:disabled {
+  background: gray;
+}
+
+input[type="checkbox"]:checked + label {
+  font-weight: bold;
+}
+</code></pre>
+<!--  code  end -->
+      </li>
+      <li>:nth-child(3), :nth-child(even), :nth-child(odd)</li>
+      <li>:nth-child(3n + 4)</li>
+      <li>Examples:</li>
+      <li>
+
+  <!--  code  start -->
+  <pre><code class="language-css">/* it will target every 3th img
+starting from 4th */
+img:nth-child(3n + 4) { }
+
+/* it will target only img  */
+
+img:nth-of-type(3n + 4) { }</code></pre>
+  <!--  code  end -->
+      </li>
+      <li>:root, :target</li>
+      <li>href="#col-1" can target div id="#col-1"</li>
+      <li>Examples:</li>
+      <li>
+<!--  code  start -->
+<pre><code class="language-css">#col-1:target { background: #000; }</code></pre>
+<!--  code  end -->
+      </li>
+      <li>
+<!--  code  start -->
+<pre><code class="language-markup">&lt;div id="#col-1"&gt;content&lt;/div&gt;</code></pre>
+<!--  code  end -->
+      </li>
+      <li>:not()</li>
+      <li>Examples:</li>
+      <li>
+<!--  code  start -->
+<pre><code class="language-css">/* works everywhere except type="button" */
+input:not([type="button"]) {
+  border-color: blue;
+}</code></pre>
+<!--  code  end -->
+      </li>
+      <li>Pseudo-Elements ::first-line and ::first-letter</li>
+      <li>Pseudo-Elements ::before and ::after</li>
+      <li>Examples:</li>
+      <li>
+<!--  code  start -->
+<pre><code class="language-css">/* we can put an icon before text */
+.icon::before {
+  content: url(../img/icons.svg);
+  margin-right: 10px;
+}</code></pre>
+<!--  code  end -->
+      </li>
+      <li>The attr() CSS Function</li>
+      <li>Examples:</li>
+      <li>
+<!--  code  start -->
+<pre><code class="language-css">/* we can display chosen attribute */
+.load a::after {
+  content: attr(title);
+  display: inline-block;
+}</code></pre>
+<!--  code  end -->
+      </li>
 
 
       </ul>

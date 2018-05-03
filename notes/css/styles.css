@@ -133,7 +133,7 @@ body {
 .item ul {
   list-style: none; }
 
-.button-menu, .button-menu-drop, .button-add {
+.button-menu, .button-menu-drop, .button-menu:focus, .button-add {
   border: 0 solid #e6e6e6;
   width: 100%;
   padding: 1.3em 0 1.3em 0;
@@ -142,7 +142,7 @@ body {
   font-size: 1.2em;
   font-weight: bold;
   cursor: pointer;
-  outline: none; }
+  outline: 0; }
 
 .button-color1, .button-color2 {
   padding: 0;
@@ -160,6 +160,11 @@ div.smile_01, .important, div.done {
   top: 0.5em;
   left: 0.5em; }
 
+@media (max-width: 769px) {
+  li.code {
+    padding: 0;
+    line-height: 2em;
+    font-size: 12px; } }
 .arrow {
   margin: 0;
   border: solid #4d4d4d;
@@ -196,25 +201,27 @@ div.smile_01, .important, div.done {
   float: left; }
 
 .button:focus, .button:active, .button:hover {
-  outline: none; }
+  outline: 0; }
 
 .button::-moz-focus-inner {
   border: 0; }
 
-.button-menu, .button-menu-drop {
+.button-menu, .button-menu-drop, .button-menu:focus {
   margin-bottom: 0.5em;
   background-color: whitesmoke;
   color: #4d4d4d; }
-.button-menu:active, .button-menu-drop {
-  background-color: #e6e6e6; }
-.button-menu-drop {
+.button-menu:active {
+  background-color: #e6e6e6;
+  outline: 0; }
+.button-menu-drop, .button-menu-drop:focus {
   background-color: #4d4d4d;
   color: #ffffff; }
 .button-add {
   background-color: #5fcf80;
   color: #ffffff; }
-.button-add:active {
-  background-color: #3ac162; }
+.button-add:active, .button-add:focus {
+  background-color: #3ac162;
+  outline: 0; }
 
 .button-color1 {
   background-color: #fff7e6;
@@ -325,12 +332,12 @@ div.done {
   background-position: 120px -13px; }
 
 div.code {
-  background-color: #414859;
   width: auto;
   padding: 1em;
   font-family: Consolas;
+  overflow: scroll;
   font-size: 1em;
-  border-radius: 5px;
+  border-radius: 0px;
   color: #f2f2f2; }
   div.code p {
     font-size: 1em; }

@@ -11,7 +11,9 @@
 // @media
 // ---------------------------------------------------
 
-@media #{$brk-mobile} { }
+@media #{$brk-mobile} {
+  li.code { padding: 0; line-height: 2em; font-size: 12px; }
+ }
 
 
 @media #{$brk-desktop} { }
@@ -52,22 +54,22 @@
 
 .colors-container { display: inline-block; float: left; }
 
-.button:focus, .button:active, .button:hover { outline: none; }
+.button:focus, .button:active, .button:hover { outline: 0; }
 .button::-moz-focus-inner { border: 0; }
 .button {
-     &-menu, &-menu-drop {
+     &-menu, &-menu-drop, &-menu:focus {
        @extend %button-default; margin-bottom: 0.5em;
        background-color: darken($white, 4%);
        color: darken($white, 70%); }
-     &-menu:active, &-menu-drop , {
-       background-color: darken($white, 10%); }
-     &-menu-drop { background-color: darken($white, 70%); color: $white; }
+     &-menu:active, {
+       background-color: darken($white, 10%); outline: 0;}
+     &-menu-drop, &-menu-drop:focus { background-color: darken($white, 70%); color: $white; }
      &-add {
        @extend %button-default;
        background-color: #5fcf80;
        color: $white; }
-     &-add:active {
-       background-color: darken(#5fcf80, 10%); }
+     &-add:active, &-add:focus {
+       background-color: darken(#5fcf80, 10%); outline: 0; }
 }
 
 .button {
@@ -178,12 +180,12 @@ div.done {
 
 
 div.code {
-  background-color: lighten(#2b303b, 10%);
   width: auto;
   padding: 1em;
   font-family: Consolas;
+  overflow: scroll;
   font-size: 1em;
-  border-radius: 5px;
+  border-radius: 0px;
   color: #f2f2f2;
   & p{ font-size: 1em; }
 }
