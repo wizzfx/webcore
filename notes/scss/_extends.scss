@@ -11,6 +11,7 @@
   border-radius: $br;
   font-size: 1.2em; font-weight: bold;
   cursor: pointer;
+  outline: none;
 }
 
 %button-colors {
@@ -20,15 +21,15 @@
 }
 
 %emoticon-defaults {
+  // background-color: $black;
   background: url('#{$path-img}/emoticons_01.png');
-  line-height: 22px;
-  position: relative;
-  margin-left: 1em;
-  top: 0.6em;
-  height: 30px;
-  width: 30px;
+  height: 22px;
+  width: 22px;
   display: inline-block;
-
+  line-height: 2em;
+  position: relative;
+  top: 0.5em;
+  left: 0.5em;
 }
 
 // default notes look

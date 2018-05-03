@@ -39,7 +39,7 @@
       height: 0;
       overflow: auto;
       z-index: 1;
-      transition: height 0.3s ease-out;
+      transition: height 0.2s ease-out;
       &::-webkit-scrollbar { display: none; }
       -ms-overflow-style: none;
       overflow: -moz-scrollbars-none;
@@ -47,7 +47,7 @@
 
 .show {
       display:block; height: 10.5em;
-      transition: height 0.3s ease-in;
+      transition: height 0.2s ease-in;
 }
 
 .colors-container { display: inline-block; float: left; }
@@ -125,20 +125,18 @@ div.nav-colors {
 }
 
 .item { min-height: 16em; width: 100%; float: left;
-        align-items: stretch;
         background-color: #fff7e6; font-weight: normal;
-        border: 1px solid #ffebbc; line-height: auto;
-        color: #000; padding-bottom: 0.6em;
+        border: 1px solid #ffebbc; line-height: 1em;
+        color: #000; padding-bottom: 0.3em;
         -webkit-box-shadow: 0 3px 0px 0px darken($white, 15%);
         margin-bottom: 1.1em;
-
 }
 
 .note-title { @include text-title(20px, bold, #ebba51);
-              margin-left: 10px; margin-top: 10px;padding-bottom: 10px; }
+              margin-left: 0.5em; margin-top: 0.6em; padding-bottom: 0.6em; }
 
-.item ul{ @extend %lists-clean;padding: 10px; line-height: 16px;}
-.item ul li { padding: 7px; line-height: 20px;font-size: 16px;}
+.item ul{ @extend %lists-clean; margin: 20px; line-height: 2em;}
+.item ul li { padding: 0; line-height: 2em; font-size: 16px; }
 .face { width: 10px; height: 10px; margin: 0; padding: 0;
         background: url('#{$path-img}/smile_01.png'); }
 
@@ -161,15 +159,15 @@ footer p{
 // emoticons
 // ---------------------------------------------------
 
-.smile_01 {
+div.smile_01 {
   @extend %emoticon-defaults;
-  background-position: -50px -10px;
+  background-position: -50px -15px;
 }
 .important {
     @extend %emoticon-defaults;
     background-position: 80px -10px;
 }
-.done {
+div.done {
     @extend %emoticon-defaults;
     background-position: 120px -13px;
 }

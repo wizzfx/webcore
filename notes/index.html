@@ -53,6 +53,93 @@
     <section>
     <div class="note-grid">
 
+      <div class="item">
+      <ul>
+        <li><p class='note-title'>CSS Selectors:</p></li>
+        <li>Few selectors:</li>
+        <li>Attribute selector [ attribute here ] { css styles }</li>
+        <li>Examples:</li>
+        <li>
+<!--  code  start -->
+<pre><code class="language-css">input[type="text"] {
+  background: #fdfee6;
+}</code></pre>
+<!--  code  end -->
+        <li>DRY (don't repeat yourself) CSS class="content br" additional classes after spacebar</li>
+        <li>Examples:</li>
+        <li>
+<!--  code  start -->
+<pre><code class="language-css">.content {
+height: 10em;
+width: 10em;
+}
+  .avatar {
+border-radius: 2em;
+}</code></pre>
+<!--  code  end -->
+
+<!--  code  start -->
+<pre><code class="language-html">&lt;div class="content avatar"&gt;&lt;/div&gt;</code></pre>
+<!--  code  end -->
+        </li>
+        <li>Selectors like "> + ~"</li>
+        <li>Examples:
+<!--  code  start -->
+<pre><code class="language-css">/* li is direct child of .main-nav - */
+.main-nav > li {
+display: inline-block;
+margin-left: 20px;
+}</code></pre>
+<!--  code  end --></li>
+        <li>
+<!--  code  start -->
+<pre><code class="language-css">/* adjacent sibling */
+.h2 + li {
+display: inline-block;
+margin-left: 20px;
+}</code></pre>
+<!--  code  end -->
+      </li>
+      <li>
+<!--  code  start -->
+<pre><code class="language-css">/* general sibling */
+.h2 ~ li {
+display: inline-block;
+margin-left: 20px;
+}</code></pre>
+<!--  code  end -->
+    </li>
+    <li>:first-child and :last-child selectors</li>
+    <li>Examples:</li>
+    <li>
+<!--  code  start -->
+<pre><code class="language-css">div:first-child {
+margin-left: 0;
+}</code></pre>
+<!--  code  end -->
+    </li>
+    <li>
+<!--  code  start -->
+<pre><code class="language-css">li:last-child {
+float: right;
+}</code></pre>
+<!--  code  end -->
+    </li>
+    <li>:only-child and :empty selectors</li>
+    <li>'Begin With' and 'Ends With' attribute selectors</li>
+    <li>Examples:</li>
+    <li>
+<!--  code  start -->
+<pre><code class="language-css">/*   ^ begin with, $ end with   */
+a[href^="http://"] { }
+a[href$=".jpg"] { }</code></pre>
+<!--  code  end -->
+    </li>
+
+
+      </ul>
+      </div>
+
     <div class="item">
     <ul>
       <li><p class='note-title'>Git stuff:</p></li>
@@ -74,7 +161,7 @@
       <li>- git revert ( following with commit SHA code )</li>
       <li>- git branch ( create branch following with branch name )</li>
       <li></li>
-      <li>- pushing new repo to empty repo on GitHub</li>
+      <li>pushing new repo to empty repo on GitHub: </li>
       <li>
 
 <!--  code  start -->
@@ -106,7 +193,7 @@ function start(){}
     <div class="item">
     <ul>
       <li><p class='note-title'>Zbrush Shorts Etc.</p></li>
-      <li>-  sliding toolbar ( Ctrl + drag )<div class="smile_01"></div></li>
+      <li>-  sliding toolbar ( Ctrl + drag )<img class="smile_01"></li>
       <li>-  create polygroup ( Ctrl + W )</li>
       <li>-  show polygroups ( Shift + E )</li>
       <li>-  brush options ( mask by polygroups )</li>

@@ -141,7 +141,8 @@ body {
   border-radius: 5px;
   font-size: 1.2em;
   font-weight: bold;
-  cursor: pointer; }
+  cursor: pointer;
+  outline: none; }
 
 .button-color1, .button-color2 {
   padding: 0;
@@ -149,15 +150,15 @@ body {
   width: 2em;
   background-color: #fff7e6; }
 
-.smile_01, .important, .done {
+div.smile_01, .important, div.done {
   background: url("../img/emoticons_01.png");
-  line-height: 22px;
+  height: 22px;
+  width: 22px;
+  display: inline-block;
+  line-height: 2em;
   position: relative;
-  margin-left: 1em;
-  top: 0.6em;
-  height: 30px;
-  width: 30px;
-  display: inline-block; }
+  top: 0.5em;
+  left: 0.5em; }
 
 .arrow {
   margin: 0;
@@ -179,7 +180,7 @@ body {
   height: 0;
   overflow: auto;
   z-index: 1;
-  transition: height 0.3s ease-out;
+  transition: height 0.2s ease-out;
   -ms-overflow-style: none;
   overflow: -moz-scrollbars-none; }
   .groups-content::-webkit-scrollbar {
@@ -188,7 +189,7 @@ body {
 .show {
   display: block;
   height: 10.5em;
-  transition: height 0.3s ease-in; }
+  transition: height 0.2s ease-in; }
 
 .colors-container {
   display: inline-block;
@@ -271,13 +272,12 @@ div.nav-colors {
   min-height: 16em;
   width: 100%;
   float: left;
-  align-items: stretch;
   background-color: #fff7e6;
   font-weight: normal;
   border: 1px solid #ffebbc;
-  line-height: auto;
+  line-height: 1em;
   color: #000;
-  padding-bottom: 0.6em;
+  padding-bottom: 0.3em;
   -webkit-box-shadow: 0 3px 0px 0px #d9d9d9;
   margin-bottom: 1.1em; }
 
@@ -285,17 +285,17 @@ div.nav-colors {
   font-size: 20px;
   font-weight: bold;
   color: #ebba51;
-  margin-left: 10px;
-  margin-top: 10px;
-  padding-bottom: 10px; }
+  margin-left: 0.5em;
+  margin-top: 0.6em;
+  padding-bottom: 0.6em; }
 
 .item ul {
-  padding: 10px;
-  line-height: 16px; }
+  margin: 20px;
+  line-height: 2em; }
 
 .item ul li {
-  padding: 7px;
-  line-height: 20px;
+  padding: 0;
+  line-height: 2em;
   font-size: 16px; }
 
 .face {
@@ -315,13 +315,13 @@ footer p {
   padding: 50px 0 50px 0px;
   text-align: center; }
 
-.smile_01 {
-  background-position: -50px -10px; }
+div.smile_01 {
+  background-position: -50px -15px; }
 
 .important {
   background-position: 80px -10px; }
 
-.done {
+div.done {
   background-position: 120px -13px; }
 
 div.code {
