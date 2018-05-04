@@ -7,9 +7,9 @@
 %button-default {
   border: 0 solid darken($white, 10%);
   width: 100%;
-  padding: 1.3em 0 1.3em 0; margin: 0;
+  padding: 1.4em 0 1.3em 0; margin: 0;
   border-radius: $br;
-  font-size: 1.2em; font-weight: bold;
+  font-size: .63em; font-weight: bold;
   cursor: pointer;
   outline: 0;
 }
@@ -28,7 +28,7 @@
   display: inline-block;
   line-height: 2em;
   position: relative;
-  top: 0.5em;
+  top: 0.35em;
   left: 0.5em;
 }
 
