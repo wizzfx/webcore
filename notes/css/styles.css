@@ -110,7 +110,7 @@ body {
   color: #000;
   background-color: #fff;
   margin: 0.5em;
-  line-height: 1em;
+  line-height: 22px;
   padding: 0;
   font-size: 22px;
   font-family: "Source Sans Pro", sans-serif; }
@@ -157,15 +157,18 @@ div.smile_01, div.important, div.done {
   top: 0.35em;
   left: 0.5em; }
 
+@media (min-width: 1025px) {
+  body {
+    margin: 0.5em -0.5em 0.5em 0.5em; } }
 .arrow {
   margin: 0;
   border: solid #4d4d4d;
-  border-width: 0 0.3em 0.3em 0;
-  display: none;
+  border-width: 0 0.2em 0.2em 0;
   position: absolute;
-  top: 9.6em;
-  right: 3em;
-  padding: 0.3em;
+  top: 6em;
+  left: 1.5em;
+  display: none;
+  padding: 0.2em;
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg); }
 
@@ -236,54 +239,64 @@ div.smile_01, div.important, div.done {
 
 div.nav-title {
   float: left;
-  padding-top: 0.1em; }
+  display: inline-block; }
 
 .nav-title a {
-  color: #b3b3b3;
-  font-size: 1.1em; }
+  color: #b3b3b3; }
   .nav-title a:active {
     color: #1a1a1a; }
 
 header {
-  margin: 0; }
+  margin: 0;
+  display: block;
+  max-width: 550px; }
 
 .color-theme {
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 0.5em; }
+  height: 1.75em; }
 
 div.nav-colors {
   margin-top: 0;
-  margin-left: auto; }
+  margin-left: auto;
+  float: right;
+  display: block; }
 
 .nav-menu {
-  width: auto;
-  display: flex;
-  flex-direction: column;
+  width: 100%;
   padding-bottom: 0.5em; }
 
+@-moz-document url-prefix() {
+  div.nav-colors {
+    top: -5px;
+    position: relative; } }
 .note-grid {
   float: left;
-  min-width: 16em;
+  min-width: 5em;
   width: 99.5%; }
 
 .item {
+  box-sizing: border-box;
   min-height: 12em;
   width: 100%;
+  max-width: 550px;
   float: left;
+  margin-right: 0.5em;
   background-color: #fff7e6;
   border: 1px solid #ffebbc;
   color: #000;
   font-weight: normal;
-  -webkit-box-shadow: 0 3px 0px 0px #d9d9d9;
+  -webkit-box-shadow: 0 3px 0 0 #d9d9d9;
+  box-shadow: 0 3px 0 0 #d9d9d9;
   margin-bottom: 0.75em; }
 
 .note-title {
-  font-size: 20px;
+  font-size: 1.2em;
   font-weight: bold;
   color: #ebba51;
   margin-left: 0.3em;
-  padding-bottom: 0.5em; }
+  padding-bottom: 0.6em; }
+
+.inside {
+  margin-top: 0.6em; }
 
 .item ul {
   margin: 1em;
@@ -304,7 +317,7 @@ footer p {
   text-align: center; }
 
 div.smile_01 {
-  background-position: 0px 0px; }
+  background-position: 0 0; }
 
 div.important {
   background-position: 80px -3px; }
@@ -313,7 +326,7 @@ div.done {
   background-position: 50px -3px; }
 
 code[class*="language"] {
-  font-size: 16px;
+  font-size: 0.9em;
   width: auto;
   overflow: scroll; }
 

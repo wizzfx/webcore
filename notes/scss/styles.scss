@@ -11,25 +11,29 @@
 // @media
 // ---------------------------------------------------
 
-@media #{$brk-mobile} { }
+@media #{$brk-mobile} {
+
+}
 
 
 
-@media #{$brk-desktop} { }
+@media #{$brk-desktop} {
+          body { margin: 0.5em -0.5em 0.5em 0.5em; }
+ }
 
 // ---------------------------------------------------
 // menu
 // ---------------------------------------------------
 
 .arrow {
-     margin: 0;
+     margin: 0 ;
      border: solid darken($white, 70%);
-     border-width: 0 0.3em 0.3em 0;
-     display: none;
+     border-width: 0 0.2em 0.2em 0;
      position: absolute;
-     top: 9.6em;
-     right: 3em;
-     padding: 0.3em;
+     top: 6em;
+     left: 1.5em;
+     display: none;
+     padding: 0.2em;
      transform: rotate(45deg);
      -webkit-transform: rotate(45deg);
 }
@@ -88,30 +92,31 @@
  }
 
 
-div.nav-title { float: left; padding-top: 0.1em; }
+div.nav-title { float: left; display: inline-block; }
 .nav-title a {
-       color: darken($white, 30%); font-size: 1.1em;
+       color: darken($white, 30%);
        &:active { color: darken($white, 90%); }
 }
+header { margin: 0; display: block; max-width: 550px; }
 
-header { margin: 0; }
-
-.color-theme {
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 0.5em;
-}
+.color-theme { height: 1.75em; }
 
 div.nav-colors {
      margin-top: 0;
      margin-left: auto;
+     float: right;
+     display: block;
 }
 .nav-menu {
-      width: auto;
-      display: flex;
-      flex-direction: column;
+
+      width: 100%;
       padding-bottom: 0.5em;
 }
+
+@-moz-document url-prefix() {
+        div.nav-colors { top: -5px; position: relative; }
+}
+
 
 // ---------------------------------------------------
 // menu end
@@ -119,22 +124,27 @@ div.nav-colors {
 
 .note-grid {
     float: left;
-    min-width: 16em;
+    min-width: 5em;
     width: 99.5%; }
 
 .item {
+    box-sizing: border-box;
     min-height: 12em;
     width: 100%;
+    max-width: 550px;
     float: left;
+    margin-right: 0.5em;
     background-color: #fff7e6;
     border: 1px solid #ffebbc;
     color: #000;
     font-weight: normal;
-    -webkit-box-shadow: 0 3px 0px 0px darken($white, 15%);
+    -webkit-box-shadow: 0 3px 0 0 darken($white, 15%);
+    box-shadow: 0 3px 0 0 darken($white, 15%);
     margin-bottom: 0.75em; }
 
-.note-title { @include text-title(20px, bold, #ebba51);
-              margin-left: 0.3em; padding-bottom: 0.5em; }
+.note-title { @include text-title(1.2em, bold, #ebba51);
+              margin-left: 0.3em; padding-bottom: 0.6em; }
+.inside { margin-top: 0.6em; }
 
 .item ul{ @extend %lists-clean; margin: 1em; line-height: 2em;}
 .item ul li { line-height: 2em; font-size: 0.75em; }
@@ -160,7 +170,7 @@ footer p{
 
 div.smile_01 {
   @extend %emoticon-defaults;
-  background-position: 0px 0px;
+  background-position: 0 0;
 }
 div.important {
     @extend %emoticon-defaults;
@@ -177,7 +187,7 @@ div.done {
 
 
 code[class*="language"]{
-  font-size: 16px;
+  font-size: 0.9em;
   width: auto;
   overflow: scroll;
 
