@@ -29,24 +29,24 @@
 
     <header>
 
-        <div class="color-theme">
-            <div class="nav-title">
-            <a href=""><script src="lib/mynotes.js" onclick="index.html"></script></a>
-            </div>
-            <div class="nav-colors">
+    <!--    <div class="nav-colors">
             <button type="button" class="button-color1" onclick=""></button>
             <button type="button" class="button-color2" onclick=""></button>
-            </div>
+            </div> -->
+        <div class="nav-title">
+        <a href=""><script src="lib/mynotes.js" onclick="index.html"></script></a>
         </div>
 
         <div class="nav-menu">
-            <div class="nav-item"><button type="button" class="button-menu" onclick="alert('+ add note')">menu</button></div>
-            <div class="nav-item-groups"><i id="gr-arrow" class="arrow"></i><button type="button" class="button-menu" onclick="myFunction()">groups</button></div>
-            <div id="myDropdown" class="groups-content" >
-                <div class="nav-item"><button type="button" class="button-menu-drop" onclick="location.href='javascript_stuff.html';">javascript stuff</button></div>
-                <div class="nav-item"><button type="button" class="button-menu-drop" onclick="location.href='ideas.html';">ideas</button></div>
-            </div>
-            <div class="nav-item"><button type="button" class="button-add" onclick="prompt()">+ add note</button></div>
+            <ul class="items-main">
+              <li><button type="button" class="button-add" onclick="prompt()">+ add note</button></li>
+              <li><button type="button" class="button-menu" onclick="alert('+ add note')">menu</button></li>
+              <li><i id="gr-arrow" class="arrow"></i><button type="button" class="button-menu" onclick="myFunction()">groups</button></li>
+                    <ul id="myDropdown" class="groups-content">
+                    <li><button type="button" class="button-menu-drop" onclick="location.href='javascript_stuff.html';">javascript stuff</button></li>
+                    <li><button type="button" class="button-menu-drop" onclick="location.href='ideas.html';">ideas</button></li>
+                    </ul>
+            </ul>
         </div> <!-- nav menu end  -->
 
     </header>
@@ -329,6 +329,14 @@ function start(){}
 
     <div class="item">
     <ul>
+      <li><p class='note-title'>Colors, Light, Etc.</p></li>
+      <li></li>
+      <li></li>
+    </ul>
+    </div>
+
+    <div class="item">
+    <ul>
       <li><p class='note-title'>Vue.JS stuff:</p></li>
       <li></li>
       <li></li>
@@ -343,6 +351,7 @@ function start(){}
 </footer>
 
 <script src="lib\prism.js"></script>
+
 
 </body>
 </html>

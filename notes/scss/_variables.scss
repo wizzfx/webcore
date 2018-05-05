@@ -32,8 +32,9 @@ $path-font: '../fonts';
 
 // Media query breakpoints
 
-$brk-mobile: '(max-width: 769px)';
-$brk-desktop   : '(min-width: 1025px)';
+$brk-mobile   : '(max-width: 769px)';
+$brk-tablet   : '(max-width: 1144px)';
+$brk-desktop  : '(min-width: 1145px)';
 
 // max-width
 
