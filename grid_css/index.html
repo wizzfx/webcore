@@ -26,24 +26,32 @@
 
 <body>
 
-  <header>my notes</header>
+  <header></header>
 
    <section>
-
+   <div class="content-wrap">
+     <h1>my notes</h1>
    <ul class="menu-grid">
-      <li><button onclick="prompt()">add</button></li>
+      <li><button onclick="prompt()">+ add note</button></li>
       <li><button onclick="mDrop()">menu</button></li>
       <li><button onclick="grDrop()">groups</button></li>
-      <li id="iddrop" class="mDrop">menu-options</li>
+      <li id="iddrop" class="mDrop">
+          <ul class="gr-settings">
+          <li>color theme</li>
+          <li>card size</li>
+          <li>etc</li>
+          </ul>
+      </li>
       <li id="idgrdrop" class="grDrop">
           <ul class="gr-flex">
-          <li><button onclick="">javascript</button></li>
+          <li><button onclick="">javascript stuff</button></li>
           <li><button onclick="">css stuff</button></li>
+          <li><button onclick="">ideasssssssss</button></li>
+          <li><button onclick="">ideasssssssss</button></li>
           </ul>
       </li>
    </ul>
-
-   <div class="content"></div>
+   </div>
 
    </section>
 

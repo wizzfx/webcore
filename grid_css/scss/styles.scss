@@ -1,14 +1,18 @@
 @import 'reset';
 
-body { background: #fff; font-size: 16px; margin: 2em;
-  padding: 0; font-family: arial; }
+body { background: #fff; line-height: 1em;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  font-family: arial; }
 
 // media queries
 
 @media (max-width: 400px) {
-  .content { width: 200px; height: 100px; background: green;}
+  .content-wrap { margin: 1em; width: auto; height: auto; background: green; }
   .gr-flex li{ display: block;}
   .menu-grid {
+        width: auto;
         list-style: none;
         display: grid;
         grid-template-areas: "add"
@@ -16,12 +20,12 @@ body { background: #fff; font-size: 16px; margin: 2em;
                              "mcontent"
                              "groups"
                              "grcontent";
-        grid-template-rows: 15px 15px auto 15px auto;
-        grid-template-columns: 200px;
+        grid-template-rows: auto;
+        grid-template-columns: auto;
   }
 }
 @media (min-width: 400px) {
-  .content { width: auto; height: 100px; background: green;}
+  .content-wrap { margin: 1em; width: auto; height: auto; background: green;}
   .gr-flex li{ float: left; }
   .menu-grid {
         width: auto;
@@ -29,17 +33,19 @@ body { background: #fff; font-size: 16px; margin: 2em;
         list-style: none;
         display: grid;
 
-        grid-template-areas: "add  menu  groups"
-                             "mcontent ... ..."
-                             "grcontent grcontent grcontent ";
-        grid-template-rows: 15px auto;
-        grid-template-columns: 80px 200px 70px;
+        grid-auto-flow: column;
+        grid-template-areas: "add menu groups "
+                             "mcontent mcontent mcontent "
+                             "grcontent ... ... " ;
+        grid-template-rows: auto;
+        grid-template-columns: auto;
   }
 }
 
+
 // grid definitions
 
-ul.menu-grid li { background: red; height: auto; width: auto; overflow: hidden;}
+ul.menu-grid li{ background: blue; overflow: hidden; }
 
 ul.menu-grid li:nth-child(1){
   grid-area: add;
@@ -60,6 +66,19 @@ ul.menu-grid li:nth-child(5){
 // content show and hide
 .mDrop, .grDrop { display: none; height: 0;}
 .show { display: block; height: auto;}
+
+// buttons styling
+
+button {
+  padding: 0.5em 1em 0.5em 1em;
+  margin-right: 0.5em;
+  margin-bottom: 0.5em;
+  border-radius: 0.2em;
+}
+
+h1 {
+  padding-bottom: 0.5em;
+}
 
 
 /*
@@ -109,6 +128,7 @@ footer {
   width: auto;
   text-align: center;
   padding: 30px 0 30px 0px;
+  clear: both;
 }
 
 
