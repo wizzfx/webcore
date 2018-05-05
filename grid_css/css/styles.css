@@ -94,52 +94,115 @@ button:hover {
   border: 0; }
 
 body {
-  background-color: #fff;
-  margin: 20px;
+  background: #fff;
+  font-size: 16px;
+  margin: 2em;
   padding: 0;
-  font-size: 25px;
   font-family: arial; }
+
+@media (max-width: 400px) {
+  .content {
+    width: 200px;
+    height: 100px;
+    background: green; }
+
+  .gr-flex li {
+    display: block; }
+
+  .menu-grid {
+    list-style: none;
+    display: grid;
+    grid-template-areas: "add" "menu" "mcontent" "groups" "grcontent";
+    grid-template-rows: 15px 15px auto 15px auto;
+    grid-template-columns: 200px; } }
+@media (min-width: 400px) {
+  .content {
+    width: auto;
+    height: 100px;
+    background: green; }
+
+  .gr-flex li {
+    float: left; }
+
+  .menu-grid {
+    width: auto;
+    background: green;
+    list-style: none;
+    display: grid;
+    grid-template-areas: "add  menu  groups" "mcontent ... ..." "grcontent grcontent grcontent ";
+    grid-template-rows: 15px auto;
+    grid-template-columns: 80px 200px 70px; } }
+ul.menu-grid li {
+  background: red;
+  height: auto;
+  width: auto;
+  overflow: hidden; }
+
+ul.menu-grid li:nth-child(1) {
+  grid-area: add; }
+
+ul.menu-grid li:nth-child(2) {
+  grid-area: menu; }
+
+ul.menu-grid li:nth-child(3) {
+  grid-area: groups; }
+
+ul.menu-grid li:nth-child(4) {
+  grid-area: mcontent; }
+
+ul.menu-grid li:nth-child(5) {
+  grid-area: grcontent; }
+
+.mDrop, .grDrop {
+  display: none;
+  height: 0; }
+
+.show {
+  display: block;
+  height: auto; }
+
+/*
 
 .grid {
   max-width: auto;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 400px));
   grid-auto-rows: minmax(400px, auto);
-  grid-gap: 20px; }
+  grid-gap: 20px;
+}
 
 .items {
   background-color: #f2f2f2;
-  margin: auto; }
+  margin: auto;
+}
 
 .container {
-  max-width: 400px; }
+  max-width: 400px;
+}
 
-button {
-  padding: 10px 00px 10px 00px; }
+button { padding:10px 00px 10px 00px; }
+
 
 .nav-grid {
-  margin-top: 20px;
-  max-width: auto;
-  display: grid;
-  grid-auto-columns: 100px;
-  grid-auto-flow: column;
-  grid-gap: 10px; }
+    margin-top: 20px;
+    max-width: auto;
+    display: grid;
+    grid-auto-columns: 100px;
+    grid-auto-flow: column;
+    grid-gap: 10px;
+}
 
-.note-item {
-  border: 0px solid black;
-  font-size: 30px; }
+.note-item { border: 0px solid black; font-size: 30px;}
 
 .note-grid {
   display: grid;
   max-width: auto;
   grid-template-columns: repeat(auto-fill, minmax(400px, 400px));
   grid-auto-rows: minmax(400px, auto);
-  grid-gap: 20px; }
+  grid-gap: 20px;
+}
 
-@media (max-width: 873px) {
-  .note-grid {
-    grid-template-columns: auto;
-    grid-auto-rows: minmax(400px, auto); } }
+*/
 footer {
   width: auto;
   text-align: center;

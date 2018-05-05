@@ -24,6 +24,12 @@
                     document.getElementById("gr-arrow").classList.toggle("ar-show");
             }
             </script>
+            <script>
+                function myFunctionMenu() {
+                    document.getElementById("myDropdown-menu").classList.toggle("menu-show");
+
+            }
+            </script>
 <body>
 
 
@@ -40,12 +46,12 @@
         <div class="nav-menu">
             <ul class="items-main">
               <li><button type="button" class="button-add" onclick="prompt()">+ add note</button></li>
-              <li><button type="button" class="button-menu" onclick="alert('+ add note')">menu</button></li>
+              <li><button type="button" class="button-menu"  onclick="myFunctionMenu()">menu</button></li>
               <li><i id="gr-arrow" class="arrow"></i><button type="button" class="button-menu" onclick="myFunction()">groups</button></li>
-                    <ul id="myDropdown" class="groups-content">
-                    <li><button type="button" class="button-menu-drop" onclick="location.href='javascript_stuff.html';">javascript stuff</button></li>
-                    <li><button type="button" class="button-menu-drop" onclick="location.href='ideas.html';">ideas</button></li>
-                    </ul>
+                <ul id="myDropdown" class="groups-content">
+                <li><button type="button" class="button-menu-drop" onclick="location.href='javascript_stuff.html';">javascript stuff</button></li>
+                <li><button type="button" class="button-menu-drop" onclick="location.href='ideas.html';">ideas</button></li>
+                </ul>
             </ul>
         </div> <!-- nav menu end  -->
 
