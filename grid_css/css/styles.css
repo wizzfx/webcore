@@ -105,14 +105,16 @@ body {
     height: auto;
     background: green; }
 
-  ul.gr-flex {
-    display: flex;
-    flex-direction: column; }
+  .gr-flex li {
+    display: block; }
 
-  ul.menu-flex > li {
+  .menu-grid {
     width: auto;
     list-style: none;
-    display: block; } }
+    display: grid;
+    grid-template-areas: "add" "menu" "mcontent" "groups" "grcontent";
+    grid-template-rows: auto;
+    grid-template-columns: auto; } }
 @media (min-width: 400px) {
   .content-wrap {
     margin: 1em;
@@ -120,32 +122,36 @@ body {
     height: auto;
     background: green; }
 
-  ul.gr-settings {
-    float: left;
-    display: flex;
-    flex-direction: row; }
-
-  ul.gr-flex li {
-    display: inline-block;
+  .gr-flex li {
     float: left; }
 
-  ul.menu-flex {
+  .menu-grid {
     width: auto;
     background: green;
     list-style: none;
-    display: flex;
-    flex-direction: row; }
-
-  .menu-flex li:nth-child(3) {
-    background: red;
-    order: 5; }
-
-  .menu-flex li:nth-child(4) {
-    background: red;
-    clear: both; } }
-ul.menu-flex li {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-areas: "add menu groups " "mcontent mcontent mcontent " "grcontent ... ... ";
+    grid-template-rows: auto;
+    grid-template-columns: auto; } }
+ul.menu-grid li {
   background: blue;
   overflow: hidden; }
+
+ul.menu-grid li:nth-child(1) {
+  grid-area: add; }
+
+ul.menu-grid li:nth-child(2) {
+  grid-area: menu; }
+
+ul.menu-grid li:nth-child(3) {
+  grid-area: groups; }
+
+ul.menu-grid li:nth-child(4) {
+  grid-area: mcontent; }
+
+ul.menu-grid li:nth-child(5) {
+  grid-area: grcontent; }
 
 .mDrop, .grDrop {
   display: none;
