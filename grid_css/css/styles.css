@@ -105,16 +105,14 @@ body {
     height: auto;
     background: green; }
 
-  .gr-flex li {
-    display: block; }
+  ul.gr-flex {
+    display: flex;
+    flex-direction: column; }
 
-  .menu-grid {
+  ul.menu-flex > li {
     width: auto;
     list-style: none;
-    display: grid;
-    grid-template-areas: "add" "menu" "mcontent" "groups" "grcontent";
-    grid-template-rows: auto;
-    grid-template-columns: auto; } }
+    display: block; } }
 @media (min-width: 400px) {
   .content-wrap {
     margin: 1em;
@@ -122,36 +120,32 @@ body {
     height: auto;
     background: green; }
 
-  .gr-flex li {
+  ul.gr-settings {
+    float: left;
+    display: flex;
+    flex-direction: row; }
+
+  ul.gr-flex li {
+    display: inline-block;
     float: left; }
 
-  .menu-grid {
+  ul.menu-flex {
     width: auto;
     background: green;
     list-style: none;
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-areas: "add menu groups " "mcontent mcontent mcontent " "grcontent ... ... ";
-    grid-template-rows: auto;
-    grid-template-columns: auto; } }
-ul.menu-grid li {
+    display: flex;
+    flex-direction: row; }
+
+  .menu-flex li:nth-child(3) {
+    background: red;
+    order: 5; }
+
+  .menu-flex li:nth-child(4) {
+    background: red;
+    clear: both; } }
+ul.menu-flex li {
   background: blue;
   overflow: hidden; }
-
-ul.menu-grid li:nth-child(1) {
-  grid-area: add; }
-
-ul.menu-grid li:nth-child(2) {
-  grid-area: menu; }
-
-ul.menu-grid li:nth-child(3) {
-  grid-area: groups; }
-
-ul.menu-grid li:nth-child(4) {
-  grid-area: mcontent; }
-
-ul.menu-grid li:nth-child(5) {
-  grid-area: grcontent; }
 
 .mDrop, .grDrop {
   display: none;
