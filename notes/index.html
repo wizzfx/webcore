@@ -20,16 +20,18 @@
 </head>
             <script>
                 function myFunction() {
-                    document.getElementById("myDropdown").classList.toggle("show");
-                    document.getElementById("gr-arrow").classList.toggle("ar-show");
-            }
+                document.getElementById("myDropdown").classList.toggle("show");
+                document.getElementById("gr-arrow").classList.toggle("ar-show");
+                }
             </script>
-            <script>
-                function myFunctionMenu() {
-                    document.getElementById("myDropdown-menu").classList.toggle("menu-show");
 
-            }
+            <script>
+                function myS() {
+                document.getElementById("mySettings-drop").classList.toggle("ms-show");
+                document.getElementById("ms-arrow").classList.toggle("ar-ms-show");
+                }
             </script>
+
 <body>
 
 
@@ -45,13 +47,25 @@
 
         <div class="nav-menu">
             <ul class="items-main">
-              <li><button type="button" class="button-add" onclick="prompt()">+ add note</button></li>
-              <li><button type="button" class="button-menu"  onclick="myFunctionMenu()">menu</button></li>
-              <li><i id="gr-arrow" class="arrow"></i><button type="button" class="button-menu" onclick="myFunction()">groups</button></li>
+              <li id="a"><button type="button" class="button-add" onclick="prompt()">+ add note</button></li>
+              <li id="b"><i id="ms-arrow" class="ms-arrow"></i><button type="button" class="button-menu"  onclick="myS()">menu</button></li>
+              <li id="c"><i id="gr-arrow" class="arrow"></i><button type="button" class="button-menu" onclick="myFunction()">groups</button></li>
                 <ul id="myDropdown" class="groups-content">
                 <li><button type="button" class="button-menu-drop" onclick="location.href='javascript_stuff.html';">javascript stuff</button></li>
                 <li><button type="button" class="button-menu-drop" onclick="location.href='ideas.html';">ideas</button></li>
+                <li><button type="button" class="button-menu-drop" onclick="location.href='javascript_stuff.html';">javascript stuff</button></li>
+                <li><button type="button" class="button-menu-drop" onclick="location.href='ideas.html';">ideas</button></li>
+                <li><button type="button" class="button-menu-drop" onclick="location.href='javascript_stuff.html';">javascript stuff</button></li>
+                <li><button type="button" class="button-menu-drop" onclick="location.href='ideas.html';">+ add new group</button></li>
                 </ul>
+              <li>
+                  <ul id="mySettings-drop" class="menu-settings">
+                  <li>color themes: color1 / color 2</li>
+                  <li>groups on desktop always visible: on / off</li>
+                  <li>amount of columns always visible: 3 / 2 / 1 </li>
+                  <li>colmns size: 250 / 500 / 100%</li>
+                  </ul>
+              </li>
             </ul>
         </div> <!-- nav menu end  -->
 
@@ -343,7 +357,7 @@ function start(){}
 
     <div class="item">
     <ul>
-      <li><p class='note-title'>Vue.JS stuff:</p></li>
+      <li><p class='note-title'>REACT.JS stuff:</p></li>
       <li></li>
       <li></li>
     </ul>
