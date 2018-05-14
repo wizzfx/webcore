@@ -25,8 +25,10 @@
           body { margin: 0.5em 0.5em 0.5em 0.5em; }
           div.nav-menu { margin: 0; height: auto; width: auto; float:left; min-height: 0.2em;}
 
-          ul.items-main { min-width: 30em; height: auto; line-height: 0em; list-style: none; }
-          ul.items-main li { margin-right: 0.5em; display: inline-block; list-style: none; float:left; }
+          ul.items-main {
+            min-width: 30em; height: auto; line-height: 0em; list-style: none; }
+          ul.items-main li {
+            margin-right: 0.5em; display: inline-block; list-style: none; float:left; }
 
           .button-menu, .button-menu:hover, .button-menu:active, .button-menu:focus, .button-menu-drop,
           { padding: 1.2em 5em 1.1em 5em; margin-bottom: 0;}
@@ -98,6 +100,7 @@
 // ---------------------------------------------------
 
 // drop down menus + show + arrows
+
 ul.items-main > li:last-child { height: auto; }
 
 .groups-content {
@@ -249,10 +252,11 @@ div.nav-colors {
 
 .note-title { @include text-title(1.2em, bold, #ebba51);
               margin-left: 0.3em; padding-bottom: 0.6em; }
-.inside { margin-top: 0.6em; }
+.inside { margin-top: 0.9em; }
 
-.item ul{ @extend %lists-clean; margin: 1em; line-height: 2em;}
+.item ul{ @extend %lists-clean; margin: 1em; line-height: 2em; }
 .item ul li { line-height: 2em; font-size: 0.75em; }
+.highlight-1 { background-color: green; }
 
 // ---------------------------------------------------
 // footer

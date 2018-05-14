@@ -128,7 +128,7 @@ body {
   width: 50%; }
 
 .item ul {
-  list-style: none; }
+  list-style: none !important; }
 
 .button-menu, .button-menu-drop, .button-menu:focus, .button-add {
   border: 0 solid #e6e6e6;
@@ -451,7 +451,7 @@ div.nav-colors {
   padding-bottom: 0.6em; }
 
 .inside {
-  margin-top: 0.6em; }
+  margin-top: 0.9em; }
 
 .item ul {
   margin: 1em;
@@ -460,6 +460,9 @@ div.nav-colors {
 .item ul li {
   line-height: 2em;
   font-size: 0.75em; }
+
+.highlight-1 {
+  background-color: green; }
 
 footer p {
   clear: both;
