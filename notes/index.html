@@ -18,19 +18,25 @@
   <![endif]-->
 
 </head>
-            <script>
-                function myFunction() {
-                document.getElementById("myDropdown").classList.toggle("show");
-                document.getElementById("gr-arrow").classList.toggle("ar-show");
-                }
-            </script>
 
-            <script>
-                function myS() {
-                document.getElementById("mySettings-drop").classList.toggle("ms-show");
-                document.getElementById("ms-arrow").classList.toggle("ar-ms-show");
-                }
-            </script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+      </script>
+      <script src="lib/app.js">
+      </script>
+
+      <script>
+          function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+          document.getElementById("gr-arrow").classList.toggle("ar-show");
+          }
+      </script>
+
+      <script>
+          function myS() {
+          document.getElementById("mySettings-drop").classList.toggle("ms-show");
+          document.getElementById("ms-arrow").classList.toggle("ar-ms-show");
+          }
+      </script>
 
 <body>
 
@@ -47,9 +53,9 @@
 
         <div class="nav-menu">
             <ul class="items-main">
-              <li id="a"><button type="button" class="button-add" onclick="prompt()">+ add note</button></li>
-              <li id="b"><i id="ms-arrow" class="ms-arrow"></i><button type="button" class="button-menu"  onclick="myS()">menu</button></li>
-              <li id="c"><i id="gr-arrow" class="arrow"></i><button type="button" class="button-menu" onclick="myFunction()">groups</button></li>
+              <li id="1"><button type="button" class="button-add" onclick="prompt()">+ add note</button></li>
+              <li id="2"><i id="ms-arrow" class="ms-arrow"></i><button type="button" class="button-menu"  onclick="myS()">menu</button></li>
+              <li id="3"><i id="gr-arrow" class="arrow"></i><button type="button" class="button-menu" onclick="myFunction()">groups</button></li>
                 <ul id="myDropdown" class="groups-content">
                 <li><button type="button" class="button-menu-drop" onclick="location.href='javascript_stuff.html';">javascript stuff</button></li>
                 <li><button type="button" class="button-menu-drop" onclick="location.href='ideas.html';">ideas</button></li>
@@ -58,7 +64,7 @@
                 <li><button type="button" class="button-menu-drop" onclick="location.href='javascript_stuff.html';">javascript stuff</button></li>
                 <li><button type="button" class="button-menu-drop" onclick="location.href='ideas.html';">+ add new group</button></li>
                 </ul>
-              <li>
+              <li id="4">
                   <ul id="mySettings-drop" class="menu-settings">
                   <li>color themes: color1 / color 2</li>
                   <li>groups on desktop always visible: on / off</li>
@@ -280,7 +286,12 @@ and height of container */
     <ul>
       <li><p class='note-title'>Git stuff:</p></li>
       <li>- files can be: modified, stagged, commited <div class="smile_01"></div></li>
-      <li>- git init ( create new repo within folder )<div class="done"></div></li>
+      <li>- mkdir ( create folder with chosen name )</li>
+      <li>- mv *.js ( move all .JS files to chosen folder )</li>
+      <li>- git config</li>
+      <li>- git config --list</li>
+      <li>- git --version</li>
+      <li>- git init ( create new empty repo within folder )<div class="done"></div></li>
       <li>- git clone ( clone repo to folder )<div class="important"></div></li>
       <li>- git pull ( download repo files )</li>
       <li>- git push ( sending repo files )</li>
@@ -406,6 +417,11 @@ function start(){}
     </ul>
     </div>
 
+    <div class="item">
+    <ul>
+      <li><p class='note-title'>JQuery</p></li>
+      <li></li>
+    </ul>
     </div>
 
     <div class="item">

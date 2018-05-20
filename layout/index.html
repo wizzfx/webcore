@@ -14,6 +14,36 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+
+
+
+  <script>
+
+      $(window).resize(function() {
+        if ($(window).width() < 500) {
+           console.log('Less than 500');
+           $('ul.itemExtraFieldslist').find('li.price').appendTo('ul.itemExtraFieldslist');
+        }
+      });
+
+  </script>
+
+
+
+<script>
+
+    $(window).resize(function() {
+      if ($(window).width() > 500) {
+         console.log('Less than 500');
+
+        $('ul.itemExtraFieldslist li:eq(2)').after('xxx');
+      }
+    });
+
+</script>
+
 </head>
 
 
@@ -21,16 +51,14 @@
 
   <header>
 
-    Lorem Ipsum jest tekstem stosowanym jako
-    przykładowy wypełniacz w przemyśle poligraficznym.
-    Został po raz pierwszy użyty w XV w. przez nieznanego
-    drukarza do wypełnienia tekstem próbnej książki. Pięć
-    wieków później zaczął być używany przemyśle elektronicznym,
-    pozostając praktycznie niezmienionym. Spopularyzował się w
-    latach 60. XX w. wraz z publikacją arkuszy Letrasetu, zawierających
-    fragmenty Lorem Ipsum, a ostatnio z zawierającym różne wersje Lorem
-    Ipsum oprogramowaniem przeznaczonym do realizacji druków na komputerach
-    osobistych, jak Aldus PageMaker
+    <ul class="itemExtraFieldslist">
+
+      <li>1</li>
+      <li>2</li>
+      <li class="price">3</li>
+      <li>4</li>
+
+    </ul>
 
  </header>
 

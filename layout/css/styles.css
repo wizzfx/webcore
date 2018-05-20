@@ -1,0 +1,5 @@
+  body { background-color: green; }
+
+@media only screen and (max-width: 500px) {
+  body { background-color: red; }
+}

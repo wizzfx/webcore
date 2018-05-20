@@ -158,6 +158,9 @@ div.smile_01, div.important, div.done {
   left: 0.5em; }
 
 @media (min-width: 1161px) {
+  .switch {
+    color: green; }
+
   div.nav-title {
     position: relative; }
 
@@ -270,6 +273,9 @@ div.smile_01, div.important, div.done {
     height: 100%;
     width: 500px;
     background: red; } }
+.switch {
+  color: red; }
+
 ul.items-main > li:last-child {
   height: auto; }
 
