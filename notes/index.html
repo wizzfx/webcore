@@ -21,23 +21,66 @@
 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
       </script>
+      <script>
+        $(document).ready(function(){
+
+       if ( $('.groups-content').css('display') === 'block') {
+         $('#menu-mover').replaceWith( $('#mySettings-drop') );
+       }
+
+        $('#myDropdown').hide();
+        $('#mySettings-drop').hide();
+            $('#3').click(function(){
+
+                if( $('#myDropdown').is( ":hidden" ) ) {
+                    $('#gr-arrow').show();
+                    $('#myDropdown').slideDown(200);
+                    console.log('on!!!!!');
+                }
+                else {
+                    $('#myDropdown').slideUp(200);
+                    $('#gr-arrow').hide();
+                    console.log('offf!!!!!');
+                }
+
+            });
+
+            $('#2').click(function(){
+
+                if( $('#mySettings-drop').is( ":hidden" ) ) {
+                    $('#ms-arrow').show();
+                    $('#mySettings-drop').slideDown(200);
+                    console.log('on!!!!!');
+                }
+                else {
+                    $('#mySettings-drop').slideUp(200);
+                    $('#ms-arrow').hide();
+                    console.log('offf!!!!!');
+                }
+
+            });
+
+        });
+      </script>
       <script src="lib/app.js">
       </script>
 
+
+      <!--
       <script>
           function myFunction() {
-          document.getElementById("myDropdown").classList.toggle("show");
+        //  document.getElementById("myDropdown").classList.toggle("show");
           document.getElementById("gr-arrow").classList.toggle("ar-show");
           }
       </script>
 
       <script>
           function myS() {
-          document.getElementById("mySettings-drop").classList.toggle("ms-show");
+      //    document.getElementById("mySettings-drop").classList.toggle("ms-show");
           document.getElementById("ms-arrow").classList.toggle("ar-ms-show");
           }
       </script>
-
+      -->
 <body>
 
 
@@ -54,8 +97,9 @@
         <div class="nav-menu">
             <ul class="items-main">
               <li id="1"><button type="button" class="button-add" onclick="prompt()">+ add note</button></li>
-              <li id="2"><i id="ms-arrow" class="ms-arrow"></i><button type="button" class="button-menu"  onclick="myS()">menu</button></li>
-              <li id="3"><i id="gr-arrow" class="arrow"></i><button type="button" class="button-menu" onclick="myFunction()">groups</button></li>
+              <li id="2"><i id="ms-arrow" class="ms-arrow"></i><button type="button" class="button-menu"  onclick="">menu</button></li>
+              <ul id="menu-mover"></ul>
+              <li id="3"><i id="gr-arrow" class="arrow"></i><button type="button" class="button-menu" onclick="">groups</button></li>
                 <ul id="myDropdown" class="groups-content">
                 <li><button type="button" class="button-menu-drop" onclick="location.href='javascript_stuff.html';">javascript stuff</button></li>
                 <li><button type="button" class="button-menu-drop" onclick="location.href='ideas.html';">ideas</button></li>

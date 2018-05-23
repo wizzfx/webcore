@@ -236,7 +236,7 @@ div.smile_01, div.important, div.done {
     width: 100%;
     position: relative;
     float: left;
-    height: 0;
+    height: auto;
     z-index: 1;
     overflow: auto;
     -ms-overflow-style: none;
@@ -254,34 +254,29 @@ div.smile_01, div.important, div.done {
     list-style: none;
     font-size: 0.7em;
     display: flex;
-    flex-direction: column;
-    height: auto;
+    height: 200px;
     z-index: 1;
     overflow: auto;
+    width: 500px;
     -ms-overflow-style: none;
     overflow: -moz-scrollbars-none; }
     ul.menu-settings::-webkit-scrollbar {
       display: none; }
     ul.menu-settings li {
       margin-top: 0.7em;
-      margin-bottom: 0.8em; }
-
-  ul.show {
-    height: auto; }
-
-  ul.ms-show {
-    height: 100%;
-    width: 500px;
-    background: red; } }
+      margin-bottom: 0.8em; } }
 .switch {
   color: red; }
 
 ul.items-main > li:last-child {
-  height: auto; }
+  height: auto;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
 
 .groups-content {
   display: block;
-  height: 0;
+  height: auto;
   overflow: auto;
   z-index: 1;
   -ms-overflow-style: none;
@@ -297,11 +292,15 @@ ul.menu-settings {
   font-size: 0.7em;
   display: flex;
   flex-direction: column;
-  height: 0;
+  height: auto;
   z-index: 1;
   overflow: auto;
   -ms-overflow-style: none;
-  overflow: -moz-scrollbars-none; }
+  overflow: -moz-scrollbars-none;
+  height: auto;
+  max-width: 500px;
+  margin-bottom: 0.6em;
+  padding: 1.7em; }
   ul.menu-settings li {
     padding-bottom: 1.5em; }
   ul.menu-settings li:last-child {
@@ -332,22 +331,6 @@ ul.menu-settings {
   padding: 0.2em;
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg); }
-
-.ar-show {
-  display: inline-block; }
-
-.ar-ms-show {
-  display: inline-block; }
-
-.show {
-  display: block;
-  height: auto; }
-
-ul.ms-show {
-  height: auto;
-  max-width: 500px;
-  margin-bottom: 0.6em;
-  padding: 1.7em; }
 
 .colors-container {
   display: inline-block;

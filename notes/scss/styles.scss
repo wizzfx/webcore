@@ -63,7 +63,7 @@
                 width: 100%;
                 position: relative;
                 float: left;
-                height: 0;
+                height: auto;
                 z-index: 1;
                 overflow: auto;
                 &::-webkit-scrollbar { display: none; }
@@ -80,18 +80,16 @@
               list-style: none;
               font-size: 0.7em;
               display: flex;
-              flex-direction: column;
-              height: auto;
+              height: 200px;
               z-index: 1;
               overflow: auto;
+              width: 500px;
               &::-webkit-scrollbar { display: none; }
               -ms-overflow-style: none;
               overflow: -moz-scrollbars-none;
               li { margin-top: 0.7em; margin-bottom: 0.8em;}
           }
 
-          ul.show { height: auto; }
-          ul.ms-show { height: 100%; width: 500px; background: red;}
 
  }
 
@@ -105,17 +103,19 @@
 .switch { color: red; }
 // -----------
 
-ul.items-main > li:last-child { height: auto; }
-
+ul.items-main > li:last-child { height:auto; margin: 0; padding: 0;
+                                list-style: none; }
 .groups-content {
       display: block;
-      height: 0;
+      height: auto;
       overflow: auto;
       z-index: 1;
       &::-webkit-scrollbar { display: none; }
       -ms-overflow-style: none;
       overflow: -moz-scrollbars-none;
 }
+
+
 
 ul.menu-settings {
   background-color: darken($white, 70%);
@@ -127,12 +127,16 @@ ul.menu-settings {
   flex-direction: column;
   & li { padding-bottom: 1.5em; }
   & li:last-child{ padding-bottom: 0em; }
-  height: 0;
+  height: auto;
   z-index: 1;
   overflow: auto;
   &::-webkit-scrollbar { display: none; }
   -ms-overflow-style: none;
   overflow: -moz-scrollbars-none;
+  height: auto;
+  max-width: 500px;
+  margin-bottom: 0.6em;
+  padding: 1.7em;
 }
 
 .arrow {
@@ -161,11 +165,6 @@ ul.menu-settings {
      -webkit-transform: rotate(45deg);
 }
 
-.ar-show { display: inline-block; }
-.ar-ms-show { display: inline-block; }
-
-.show { display:block; height: auto; }
-ul.ms-show { height: auto; max-width: 500px; margin-bottom: 0.6em; padding: 1.7em;}
 
 /////////////////////////////////////////////////////////////////////////////
 
