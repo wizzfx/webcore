@@ -24,22 +24,35 @@
       <script>
         $(document).ready(function(){
 
-       if ( $('.groups-content').css('display') === 'block') {
-         $('#menu-mover').replaceWith( $('#mySettings-drop') );
-       }
+          $(window).resize(function(){
+                 if ($(window).width() >= 1161) {
+                 $('#4').replaceWith( $('#mySettings-drop') );
+                 }
+                 else {
+                 $('#menu-mover').replaceWith( $('#mySettings-drop') );
+                 }
+          });
+
+
+      //  if ( $('.groups-content').css('display') === 'block') {
+      //      $('#menu-mover').replaceWith( $('#mySettings-drop') );
+      //  }
+
 
         $('#myDropdown').hide();
         $('#mySettings-drop').hide();
+        $('.arrow').css('opacity','0');
+        $('.ms-arrow').css('opacity','0');
             $('#3').click(function(){
 
                 if( $('#myDropdown').is( ":hidden" ) ) {
-                    $('#gr-arrow').show();
+                    $('.arrow').css('opacity','1');
                     $('#myDropdown').slideDown(200);
                     console.log('on!!!!!');
                 }
                 else {
                     $('#myDropdown').slideUp(200);
-                    $('#gr-arrow').hide();
+                    $('.arrow').css('opacity','0');
                     console.log('offf!!!!!');
                 }
 
@@ -48,13 +61,13 @@
             $('#2').click(function(){
 
                 if( $('#mySettings-drop').is( ":hidden" ) ) {
-                    $('#ms-arrow').show();
+                    $('.ms-arrow').css('opacity','1');
                     $('#mySettings-drop').slideDown(200);
                     console.log('on!!!!!');
                 }
                 else {
                     $('#mySettings-drop').slideUp(200);
-                    $('#ms-arrow').hide();
+                    $('.ms-arrow').css('opacity','0');
                     console.log('offf!!!!!');
                 }
 
@@ -97,9 +110,9 @@
         <div class="nav-menu">
             <ul class="items-main">
               <li id="1"><button type="button" class="button-add" onclick="prompt()">+ add note</button></li>
-              <li id="2"><i id="ms-arrow" class="ms-arrow"></i><button type="button" class="button-menu"  onclick="">menu</button></li>
+              <li id="2"><button type="button" class="button-menu"  onclick=""><i id="ms-arrow" class="ms-arrow"></i><p>menu</p></button></li>
               <ul id="menu-mover"></ul>
-              <li id="3"><i id="gr-arrow" class="arrow"></i><button type="button" class="button-menu" onclick="">groups</button></li>
+              <li id="3"><button type="button" class="button-menu" onclick=""><i id="gr-arrow" class="arrow"></i><p>groups</p></button></li>
                 <ul id="myDropdown" class="groups-content">
                 <li><button type="button" class="button-menu-drop" onclick="location.href='javascript_stuff.html';">javascript stuff</button></li>
                 <li><button type="button" class="button-menu-drop" onclick="location.href='ideas.html';">ideas</button></li>

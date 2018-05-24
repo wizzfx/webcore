@@ -205,30 +205,27 @@ div.smile_01, div.important, div.done {
     float: left; }
 
   i.arrow {
+    opacity: 1;
+    float: left;
+    border: solid #4d4d4d;
+    border-width: 0 0.2em 0.2em 0;
     position: absolute;
-    border-width: 0 0.159em 0.159em 0;
-    top: 3em;
-    left: 17.8em;
-    display: none;
-    padding: 0.18em;
+    left: 28.5em;
+    display: flex;
+    padding: 0.25em;
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg); }
 
   i.ms-arrow {
+    opacity: 1;
+    border: solid #4d4d4d;
+    border-width: 0 0.2em 0.2em 0;
     position: absolute;
-    border-width: 0 0.159em 0.159em 0;
-    top: 3em;
-    left: 9.3em;
-    display: none;
-    padding: 0.18em;
+    left: 14.7em;
+    display: flex;
+    padding: 0.25em;
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg); }
-
-  i.ar-show {
-    display: inline-block; }
-
-  i.ar-ms-show {
-    display: inline-block; }
 
   ul.groups-content {
     display: flex;
@@ -309,28 +306,31 @@ ul.menu-settings {
     display: none; }
 
 .arrow {
-  margin: 0;
+  opacity: 1;
+  float: left;
   border: solid #4d4d4d;
   border-width: 0 0.2em 0.2em 0;
-  position: absolute;
-  top: 8.8em;
-  left: 1.5em;
-  display: none;
-  padding: 0.2em;
+  position: relative;
+  left: 2em;
+  display: inline-block;
+  padding: 0.25em;
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg); }
 
 .ms-arrow {
-  margin: 0;
+  opacity: 1;
+  float: left;
   border: solid #4d4d4d;
   border-width: 0 0.2em 0.2em 0;
-  position: absolute;
-  top: 5.8em;
-  left: 1.5em;
-  display: none;
-  padding: 0.2em;
+  position: relative;
+  left: 2em;
+  display: inline-block;
+  padding: 0.25em;
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg); }
+
+.button-menu > p {
+  margin-right: 0.2em; }
 
 .colors-container {
   display: inline-block;
