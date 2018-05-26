@@ -23,27 +23,28 @@
       </script>
       <script>
         $(document).ready(function(){
+        $('.menu-switch').click(function(){
 
-          $(window).resize(function(){
-                 if ($(window).width() >= 1161) {
-                 $('#4').replaceWith( $('#mySettings-drop') );
-                 }
-                 else {
-                 $('#menu-mover').replaceWith( $('#mySettings-drop') );
-                 }
-          });
+            if( $('.nav-menu').is( ":hidden" ) ) {
+                $('.nav-menu').slideDown(200);
+                console.log('menu on!!!');
+            }
+            else {
+                $('.nav-menu').slideUp(200);
+                console.log('menu off!!!');
+            }
+
+            });
 
 
-      //  if ( $('.groups-content').css('display') === 'block') {
-      //      $('#menu-mover').replaceWith( $('#mySettings-drop') );
-      //  }
+
 
 
         $('#myDropdown').hide();
         $('#mySettings-drop').hide();
         $('.arrow').css('opacity','0');
         $('.ms-arrow').css('opacity','0');
-            $('#3').click(function(){
+            $('#4').click(function(){
 
                 if( $('#myDropdown').is( ":hidden" ) ) {
                     $('.arrow').css('opacity','1');
@@ -99,20 +100,25 @@
 
     <header>
 
-    <!--    <div class="nav-colors">
-            <button type="button" class="button-color1" onclick=""></button>
-            <button type="button" class="button-color2" onclick=""></button>
-            </div> -->
         <div class="nav-title">
-        <a href=""><script src="lib/mynotes.js" onclick="index.html"></script></a>
+          <div class="menu-switch"></div>
+          <div class="title-top"><a href=""><script src="lib/mynotes.js" onclick="index.html"></script></a></div>
         </div>
 
         <div class="nav-menu">
-            <ul class="items-main">
+            <ul class="items-menu">
               <li id="1"><button type="button" class="button-add" onclick="prompt()">+ add note</button></li>
               <li id="2"><button type="button" class="button-menu"  onclick=""><i id="ms-arrow" class="ms-arrow"></i><p>menu</p></button></li>
-              <ul id="menu-mover"></ul>
-              <li id="3"><button type="button" class="button-menu" onclick=""><i id="gr-arrow" class="arrow"></i><p>groups</p></button></li>
+              <li id="3">
+                <ul id="mySettings-drop" class="menu-settings">
+                <li>color themes: color1 / color 2</li>
+                <li>groups on desktop always visible: on / off</li>
+                <li>amount of columns always visible: 3 / 2 / 1 </li>
+                <li>colmns size: 250 / 500 / 100%</li>
+                </ul>
+              </li>
+              <li id="4"><button type="button" class="button-menu" onclick=""><i id="gr-arrow" class="arrow"></i><p>groups</p></button></li>
+              <li id="5">
                 <ul id="myDropdown" class="groups-content">
                 <li><button type="button" class="button-menu-drop" onclick="location.href='javascript_stuff.html';">javascript stuff</button></li>
                 <li><button type="button" class="button-menu-drop" onclick="location.href='ideas.html';">ideas</button></li>
@@ -121,14 +127,7 @@
                 <li><button type="button" class="button-menu-drop" onclick="location.href='javascript_stuff.html';">javascript stuff</button></li>
                 <li><button type="button" class="button-menu-drop" onclick="location.href='ideas.html';">+ add new group</button></li>
                 </ul>
-              <li id="4">
-                  <ul id="mySettings-drop" class="menu-settings">
-                  <li>color themes: color1 / color 2</li>
-                  <li>groups on desktop always visible: on / off</li>
-                  <li>amount of columns always visible: 3 / 2 / 1 </li>
-                  <li>colmns size: 250 / 500 / 100%</li>
-                  </ul>
-              </li>
+              </li>  
             </ul>
         </div> <!-- nav menu end  -->
 

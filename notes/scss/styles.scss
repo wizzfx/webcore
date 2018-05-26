@@ -15,8 +15,6 @@
 
 @media #{$brk-desktop} {
 
-          .switch { color: green; }
-
           div.nav-title { position: relative; }
 
           div.note-grid {
@@ -25,10 +23,25 @@
           }
           body { margin: 0.5em 0.5em 0.5em 0.5em; }
           div.nav-menu { margin: 0; height: auto; width: auto; float:left; min-height: 0.2em;}
-          ul.items-main {
-            min-width: 30em; height: auto; line-height: 0em; list-style: none; }
-          ul.items-main li {
-            margin-right: 0.5em; display: inline-block; list-style: none; float:left; }
+
+          // // // menu style and order change
+          ul.items-menu {
+            display: flex;
+            flex-direction: row;
+            flex-flow: wrap;
+            min-width: 30em; 
+            height: auto; 
+            line-height: 0em; 
+            list-style: none; }
+          ul.items-menu li {
+            margin-right: 0.5em;
+            display: inline-block; 
+            list-style: none; 
+          }
+          ul.items-menu li:nth-child(3) {
+            order: 4;
+          }
+          // // // menu style and order change END
 
           .button-menu, .button-menu:hover, .button-menu:active, .button-menu:focus, .button-menu-drop,
           { padding: 1.2em 5em 1.1em 5em; margin-bottom: 0; }
@@ -98,14 +111,10 @@
 // menu
 // ---------------------------------------------------
 
-// drop down menus + show + arrows
+// // // menu margin height fix
+ul.items-menu > li { height: auto; list-style: none; }
+// // // menu margin height fix END
 
-// menu switch class
-.switch { color: red; }
-// -----------
-
-ul.items-main > li:last-child { height:auto; margin: 0; padding: 0;
-                                list-style: none; }
 .groups-content {
       display: block;
       height: auto;
@@ -205,22 +214,30 @@ ul.menu-settings {
      &-color2:hover { border: 0.15em solid darken($white, 6%); }
  }
 
+ div.menu-switch { 
+  margin-bottom: 0.5em;
+  height: 40px; 
+  width: 40px; 
+  float: left;
+  background: url(#{$path-img}/menu-icon2.png);
+  background-size: 100%;
+  opacity: 0.2;
+  &:active { opacity: 0.35; }
+}
 
-div.nav-title { height: 1.75em; float: left; display: inline-block; width: auto;}
+
+div.nav-title { height: auto; float: left; display: inline-block; width: auto;}
 .nav-title a {
        color: darken($white, 30%);
        &:active { color: darken($white, 90%); }
 }
 header { margin: 0; display: block; max-width: 550px; width: auto;}
 
+div.title-top { float: left; margin-top: 0.33em; margin-left: 0.5em; }
+
+
 .color-theme { height: 1.75em; }
 
-div.nav-colors {
-     margin-top: 0;
-     margin-left: auto;
-     float: right;
-     display: block;
-}
 .nav-menu {
     width: 100%;
 }
@@ -313,7 +330,7 @@ code[class*="language"]{
 
 // ">" child selector
 
-.main-nav {
+.menu-nav {
   color: $white;
   a { color: $black; }
   > h4 { color: $white ; }

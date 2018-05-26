@@ -158,9 +158,6 @@ div.smile_01, div.important, div.done {
   left: 0.5em; }
 
 @media (min-width: 1161px) {
-  .switch {
-    color: green; }
-
   div.nav-title {
     position: relative; }
 
@@ -178,17 +175,22 @@ div.smile_01, div.important, div.done {
     float: left;
     min-height: 0.2em; }
 
-  ul.items-main {
+  ul.items-menu {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
     min-width: 30em;
     height: auto;
     line-height: 0em;
     list-style: none; }
 
-  ul.items-main li {
+  ul.items-menu li {
     margin-right: 0.5em;
     display: inline-block;
-    list-style: none;
-    float: left; }
+    list-style: none; }
+
+  ul.items-menu li:nth-child(3) {
+    order: 4; }
 
   .button-menu, .button-menu:hover, .button-menu:active, .button-menu:focus, .button-menu-drop {
     padding: 1.2em 5em 1.1em 5em;
@@ -262,13 +264,8 @@ div.smile_01, div.important, div.done {
     ul.menu-settings li {
       margin-top: 0.7em;
       margin-bottom: 0.8em; } }
-.switch {
-  color: red; }
-
-ul.items-main > li:last-child {
+ul.items-menu > li {
   height: auto;
-  margin: 0;
-  padding: 0;
   list-style: none; }
 
 .groups-content {
@@ -379,8 +376,19 @@ ul.menu-settings {
 .button-color2:hover {
   border: 0.15em solid #f0f0f0; }
 
+div.menu-switch {
+  margin-bottom: 0.5em;
+  height: 40px;
+  width: 40px;
+  float: left;
+  background: url(../img/menu-icon2.png);
+  background-size: 100%;
+  opacity: 0.2; }
+  div.menu-switch:active {
+    opacity: 0.35; }
+
 div.nav-title {
-  height: 1.75em;
+  height: auto;
   float: left;
   display: inline-block;
   width: auto; }
@@ -396,14 +404,13 @@ header {
   max-width: 550px;
   width: auto; }
 
+div.title-top {
+  float: left;
+  margin-top: 0.33em;
+  margin-left: 0.5em; }
+
 .color-theme {
   height: 1.75em; }
-
-div.nav-colors {
-  margin-top: 0;
-  margin-left: auto;
-  float: right;
-  display: block; }
 
 .nav-menu {
   width: 100%; }
@@ -478,11 +485,11 @@ code[class*="language"] {
   overflow: scroll; }
 
 /* comments */
-.main-nav {
+.menu-nav {
   color: #ffffff; }
-  .main-nav a {
+  .menu-nav a {
     color: #000000; }
-  .main-nav > h4 {
+  .menu-nav > h4 {
     color: #ffffff; }
 
 .main-body {
