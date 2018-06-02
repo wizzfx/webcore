@@ -9,6 +9,7 @@
   <meta name="author" content="wizzfx">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link rel="icon" type="image/png" href="img/favicon.png"/>
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/prism.css">
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
@@ -95,6 +96,7 @@
           }
       </script>
       -->
+      
 <body>
 
 
@@ -115,6 +117,7 @@
                 <li>groups on desktop always visible: on / off</li>
                 <li>amount of columns always visible: 3 / 2 / 1 </li>
                 <li>colmns size: 250 / 500 / 100%</li>
+                <li></li>
                 </ul>
               </li>
               <li id="4"><button type="button" class="button-menu" onclick=""><i id="gr-arrow" class="arrow"></i><p>groups</p></button></li>
@@ -462,6 +465,17 @@ function start(){}
     <div class="item">
     <ul>
       <li><p class='note-title'>REACT.JS stuff:</p></li>
+      <li>JSX for simple code instead of writting everything with React. but we have
+      to use Babel to translate our JSX code to React. 
+      You can just put Babel standalone CDN into your document.
+      </li>
+      <li>
+<!--  code  start -->
+<pre><code class="language-javascript">https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js
+</code></pre>
+<!--  code  end -->
+      </li>   
+      
       <li>- npm init</li>
       <li>- npm install react react-dom --save ( react + react dom, --save is to let npm know that these are for production dependencies )</li>
       <li>- npm install webpack webpack-dev-server babel-loader babel-preset-env babel-preset-react babel-stage-2 --save-dev

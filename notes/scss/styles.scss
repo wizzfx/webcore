@@ -48,7 +48,7 @@
           .button-menu-drop, .button-menu-drop:focus { min-width: 5em; padding: 1.2em 3em 1.1em 3em;}
           .button-add { padding: 1.2em 3.5em 1.1em 3.5em; white-space: nowrap; margin-bottom: 0; float: left;}
           i.arrow {
-              opacity: 1;
+              opacity: 0;
               float: left;
               border: solid darken($white, 70%);
               border-width: 0 0.2em 0.2em 0;
@@ -60,7 +60,7 @@
               -webkit-transform: rotate(45deg);
           }
           i.ms-arrow {
-              opacity: 1;
+              opacity: 0;
               border: solid darken($white, 70%);
               border-width: 0 0.2em 0.2em 0;
               position: absolute;
@@ -86,7 +86,7 @@
                 li{ position: relative; text-align: center;}
           }
 
-
+            
             ul.menu-settings {
               background-color: darken($white, 70%);
               color: $white;
@@ -101,7 +101,9 @@
               &::-webkit-scrollbar { display: none; }
               -ms-overflow-style: none;
               overflow: -moz-scrollbars-none;
-              li { margin-top: 0.7em; margin-bottom: 0.8em;}
+              & li{ margin-top: 0.7em; margin-bottom: 0.8em;}
+              & li:last-child { margin: 0; padding: 0;}
+
           }
 
 
@@ -150,7 +152,7 @@ ul.menu-settings {
 }
 
 .arrow {
-     opacity: 1;
+     opacity: 0;
      float:left;
      border: solid darken($white, 70%);
      border-width: 0 0.2em 0.2em 0;
@@ -164,7 +166,7 @@ ul.menu-settings {
 
 
 .ms-arrow {
-     opacity: 1;
+     opacity: 0;
      float: left;
      border: solid darken($white, 70%);
      border-width: 0 0.2em 0.2em 0;

@@ -207,7 +207,7 @@ div.smile_01, div.important, div.done {
     float: left; }
 
   i.arrow {
-    opacity: 1;
+    opacity: 0;
     float: left;
     border: solid #4d4d4d;
     border-width: 0 0.2em 0.2em 0;
@@ -219,7 +219,7 @@ div.smile_01, div.important, div.done {
     -webkit-transform: rotate(45deg); }
 
   i.ms-arrow {
-    opacity: 1;
+    opacity: 0;
     border: solid #4d4d4d;
     border-width: 0 0.2em 0.2em 0;
     position: absolute;
@@ -263,7 +263,10 @@ div.smile_01, div.important, div.done {
       display: none; }
     ul.menu-settings li {
       margin-top: 0.7em;
-      margin-bottom: 0.8em; } }
+      margin-bottom: 0.8em; }
+    ul.menu-settings li:last-child {
+      margin: 0;
+      padding: 0; } }
 ul.items-menu > li {
   height: auto;
   list-style: none; }
@@ -303,7 +306,7 @@ ul.menu-settings {
     display: none; }
 
 .arrow {
-  opacity: 1;
+  opacity: 0;
   float: left;
   border: solid #4d4d4d;
   border-width: 0 0.2em 0.2em 0;
@@ -315,7 +318,7 @@ ul.menu-settings {
   -webkit-transform: rotate(45deg); }
 
 .ms-arrow {
-  opacity: 1;
+  opacity: 0;
   float: left;
   border: solid #4d4d4d;
   border-width: 0 0.2em 0.2em 0;
