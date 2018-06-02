@@ -8,9 +8,10 @@
   <meta name="description" content="docs">
   <meta name="author" content="wizzfx">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/prism.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -18,6 +19,111 @@
 </head>
 
 <body>
-  <script src="js/scripts.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+
+<div id="wrap">
+
+    <div id="side-bar">
+      <p>menu</p>
+      <ul class="menu">
+        <li><a href="#" onclick="myFunction()">CSS</a></li>
+          <ul class="menu-css">
+            <li><a href="#" onclick="myFunction()">CSS Selectors</a></li>
+            <li><a href="#" onclick="myFunction()">CSS Layout Stuff</a></li>
+          </ul>
+        <li><a href="#" onclick="myFunction()">JavaScript</a></li>
+        <li><a href="#" onclick="myFunction()">Sass</a></li>
+        <li><a href="#" onclick="myFunction()">Git</a></li>
+        <li><a href="#" onclick="myFunction()">UE4</a></li>
+      </ul>
+    </div>
+
+    <div id="content">
+      <h1>JavaScript - Stuff</h1>
+
+      <!-- Item -->
+      <div id="1" class="item">
+        <h2>example js code</h2>
+        <p>Some text about stuff that were writing about</p>
+
+<!--  code  start -->
+<div class="code-wrap">
+<pre><code class="language-JavaScript">document.addEventListener("DOMContentLoaded", function() {
+
+    const btn = document.getElementById('btn');
+    console.log(btn.innerText); //Kliknij mnie
+
+});</code></pre>
+<div>
+<!--  code  end -->
+</div>
+
+          <!-- Item -->
+          <div class="item">
+            <h2>title</h2>
+            <p>Some text about stuff that were writing about</p>
+
+            <!--  code  start -->
+            <div class="code-wrap">
+            <pre><code class="language-css">/* li is direct child of .main-nav - */
+            .main-nav > li {
+            display: inline-block;
+            margin-left: 20px;
+            }</code></pre>
+            </div>
+            <!--  code  end -->
+          </div>
+          <!-- Item END-->
+
+          <!-- Item -->
+          <div class="item">
+            <h2>title</h2>
+            <p>Some text about stuff that were writing about</p>
+
+            <!--  code  start -->
+            <div class="code-wrap">
+            <pre><code class="language-css">/* li is direct child of .main-nav - */
+            .main-nav > li {
+            display: inline-block;
+            margin-left: 20px;
+            }</code></pre>
+            </div>
+            <!--  code  end -->
+          </div>
+          <!-- Item END-->
+
+          <!-- Item -->
+          <div id="2" class="item">
+            <h2>title</h2>
+            <p>Some text about stuff that were writing about</p>
+
+            <!--  code  start -->
+            <div class="code-wrap">
+            <pre><code class="language-css">/* li is direct child of .main-nav - */
+            .main-nav > li {
+            display: inline-block;
+            margin-left: 20px;
+            }</code></pre>
+            </div>
+            <!--  code  end -->
+          </div>
+          <!-- Item END-->
+
+
+    </div>
+
+</div>
+
+
+<script>
+function myFunction() {
+    var elmnt = document.getElementById("2");
+    elmnt.scrollIntoView();
+}
+</script>
+
+<script src="lib\prism.js"></script>
 </body>
 </html>
