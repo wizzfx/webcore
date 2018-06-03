@@ -1,0 +1,18 @@
+// extends
+
+%arrow {
+  margin: 10px 0 0 8px;
+  border: solid darken(#fff, 50%);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+}
+
+%arrow-menu {
+  margin-right: 0.6em;
+  padding: 3px;
+  position: relative;
+  left: 0;
+  border: solid #4a85de;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+}

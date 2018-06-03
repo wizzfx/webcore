@@ -11,7 +11,7 @@
 
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/prism.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -20,33 +20,71 @@
 
 <body>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-  </script>
 
 <div id="wrap">
 
+    <div id="menu-switch"><i class="arrow-left"></i></p></div>
     <div id="side-bar">
-      <p>menu</p>
       <ul class="menu">
-        <li><a href="#" onclick="myFunction()">CSS</a></li>
+        <li><i class="arrow-menu"></i><a href="#" onclick="myFunction()">CSS</a></li>
           <ul class="menu-css">
             <li><a href="#" onclick="myFunction()">CSS Selectors</a></li>
             <li><a href="#" onclick="myFunction()">CSS Layout Stuff</a></li>
           </ul>
-        <li><a href="#" onclick="myFunction()">JavaScript</a></li>
-        <li><a href="#" onclick="myFunction()">Sass</a></li>
-        <li><a href="#" onclick="myFunction()">Git</a></li>
-        <li><a href="#" onclick="myFunction()">UE4</a></li>
+        <li><i class="arrow-menu"></i><a href="#" onclick="myFunction()">JavaScript</a></li>
+        <li><i class="arrow-menu"></i><a href="#" onclick="myFunction()">Sass</a></li>
+        <li><i class="arrow-menu"></i><a href="#" onclick="myFunction()">Git</a></li>
+        <li><i class="arrow-menu"></i><a href="#" onclick="myFunction()">UE4</a></li>
       </ul>
     </div>
 
     <div id="content">
+      <h1>Git - Stuff</h1>
+      <div class="item">
+      <h2>Some commands</h2>
+      <ul>
+        <li>- files can be: modified, stagged, commited <div class="smile_01"></div></li>
+        <li>- mkdir ( create folder with chosen name )</li>
+        <li>- mv *.js ( move all .JS files to chosen folder )</li>
+        <li>- git config</li>
+        <li>- git config --list</li>
+        <li>- git --version</li>
+        <li>- git init ( create new empty repo within folder )<div class="done"></div></li>
+        <li>- git clone ( clone repo to folder )<div class="important"></div></li>
+        <li>- git pull ( download repo files )</li>
+        <li>- git push ( sending repo files )</li>
+        <li>- git add ( if you add files they are staged )</li>
+        <li>- git commit -m "description" </li>
+        <li>- git diff ( it can show changes in files )</li>
+        <li>- git diff ( shows changes for staged files )</li>
+        <li>- git rm ( remove files and will be showsn in staged files ) </li>
+        <li>- ls ( show files all ) </li>
+        <li>- rm ( remove file but will be not shown in staged files ) </li>
+        <li>- mv ( move or actually RENAME file ) </li>
+        <li>- git reset HEAD ( remove files from stagged state ) </li>
+        <li>- git checkout -- file name ( we can recover delated files ) </li>
+        <li>- git checkout -b branch name ( create branch and auto.. switch to it )</li>
+        <li>- git revert ( following with commit SHA code )</li>
+        <li>- git branch ( create branch following with branch name )</li>
+        </ul>
+        <p>pushing new repo to empty repo on GitHub:</p>
+
+<!--  code  start -->
+<div class="code-wrap">
+<pre><code class="language-">git remote add origin http://repourl
+git push -u origin master
+</code></pre>
+</div>
+<!--  code  end -->
+
+      </div>
+
       <h1>JavaScript - Stuff</h1>
 
-      <!-- Item -->
-      <div id="1" class="item">
-        <h2>example js code</h2>
-        <p>Some text about stuff that were writing about</p>
+<!-- Item -->
+<div id="1" class="item">
+<h2>example js code</h2>
+<p>Some text about stuff that were writing about</p>
 
 <!--  code  start -->
 <div class="code-wrap">
@@ -60,56 +98,55 @@
 <!--  code  end -->
 </div>
 
-          <!-- Item -->
-          <div class="item">
-            <h2>title</h2>
-            <p>Some text about stuff that were writing about</p>
+<!-- Item -->
+<div class="item">
+<h2>title</h2>
+<p>Some text about stuff that were writing about</p>
+<!--  code  start -->
+<div class="code-wrap">
+<pre><code class="language-css">/* li is direct child of .main-nav - */
+.main-nav > li {
+  display: inline-block;
+  margin-left: 20px;
+}</code></pre>
+</div>
+<!--  code  end -->
+</div>
+<!-- Item END-->
 
-            <!--  code  start -->
-            <div class="code-wrap">
-            <pre><code class="language-css">/* li is direct child of .main-nav - */
-            .main-nav > li {
-            display: inline-block;
-            margin-left: 20px;
-            }</code></pre>
-            </div>
-            <!--  code  end -->
-          </div>
-          <!-- Item END-->
+<!-- Item -->
+<div class="item">
+<h2>title</h2>
+<p>Some text about stuff that were writing about</p>
 
-          <!-- Item -->
-          <div class="item">
-            <h2>title</h2>
-            <p>Some text about stuff that were writing about</p>
+<!--  code  start -->
+<div class="code-wrap">
+<pre><code class="language-css">/* li is direct child of .main-nav - */
+.main-nav > li {
+  display: inline-block;
+  margin-left: 20px;
+}</code></pre>
+</div>
+<!--  code  end -->
+</div>
+<!-- Item END-->
 
-            <!--  code  start -->
-            <div class="code-wrap">
-            <pre><code class="language-css">/* li is direct child of .main-nav - */
-            .main-nav > li {
-            display: inline-block;
-            margin-left: 20px;
-            }</code></pre>
-            </div>
-            <!--  code  end -->
-          </div>
-          <!-- Item END-->
+<!-- Item -->
+<div id="2" class="item">
+<h2>title</h2>
+<p>Some text about stuff that were writing about</p>
 
-          <!-- Item -->
-          <div id="2" class="item">
-            <h2>title</h2>
-            <p>Some text about stuff that were writing about</p>
-
-            <!--  code  start -->
-            <div class="code-wrap">
-            <pre><code class="language-css">/* li is direct child of .main-nav - */
-            .main-nav > li {
-            display: inline-block;
-            margin-left: 20px;
-            }</code></pre>
-            </div>
-            <!--  code  end -->
-          </div>
-          <!-- Item END-->
+<!--  code  start -->
+<div class="code-wrap">
+<pre><code class="language-css">/* li is direct child of .main-nav - */
+.main-nav > li {
+  display: inline-block;
+  margin-left: 20px;
+}</code></pre>
+</div>
+<!--  code  end -->
+</div>
+<!-- Item END-->
 
 
     </div>
@@ -124,6 +161,33 @@ function myFunction() {
 }
 </script>
 
-<script src="lib\prism.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="lib\prism.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $('#menu-switch').click(function(){
+
+          if( $('#side-bar').is( ":hidden" ) ) {
+            $('#side-bar').show();
+            $('#menu-switch').css('left', '300px');
+            $('.arrow-left').css('transform','rotate(135deg)');
+            $('.arrow-left').css('left', '0');
+
+          }
+          else {
+            $('#side-bar').hide();
+            $('#menu-switch').css('left', '0');
+            $('.arrow-left').css('transform','rotate(-45deg)');
+            $('.arrow-left').css('left', '-3px');
+          }
+
+      });
+    });
+  </script>
+
 </body>
 </html>
