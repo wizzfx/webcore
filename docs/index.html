@@ -23,19 +23,35 @@
 
 <div id="wrap">
 
+
+
     <div id="menu-switch"><i class="arrow-left"></i></p></div>
     <div id="side-bar">
-      <ul class="menu">
-        <li><i class="arrow-menu"></i><a href="#" onclick="menuDrop()"class="menu-link">CSS</a></li>
-          <ul class="menu-css">
-            <li><a href="#" onclick="myFunction()">CSS Selectors</a></li>
-            <li><a href="#" onclick="myFunction()">CSS Layout Stuff</a></li>
-          </ul>
-        <li><i class="arrow-menu"></i><a href="#" onclick="myFunction()">JavaScript</a></li>
-        <li><i class="arrow-menu"></i><a href="#" onclick="myFunction()">Sass</a></li>
-        <li><i class="arrow-menu"></i><a href="#" onclick="myFunction()">Git</a></li>
-        <li><i class="arrow-menu"></i><a href="#" onclick="myFunction()">UE4</a></li>
-      </ul>
+     <ul class="menu">
+     <li><i class="arrow-menu"></i><a data-toggle="collapse" href="#collapse1">CSS</a></li>
+           <div id="collapse1" class="panel-collapse collapse">
+           <ul class="menu-drop">
+             <li><a href="#" onclick="myFunction()">CSS Selectors</a></li>
+             <li><a href="#" onclick="myFunction()">CSS Layout Stuff</a></li>
+           </ul>
+           </div>
+     <li><i class="arrow-menu"></i><a data-toggle="collapse" href="#collapse2">Collapsible list group</a></li>
+            <div id="collapse2" class="panel-collapse collapse">
+           <ul class="menu-drop">
+             <li><a href="#" onclick="myFunction()">CSS Selectors</a></li>
+             <li><a href="#" onclick="myFunction()">CSS Layout Stuff</a></li>
+             <li class="">Three</li>
+           </ul>
+           </div>
+     <li><i class="arrow-menu"></i><a data-toggle="collapse" href="#collapse3">Collapsible list group</a></li>
+           <div id="collapse3" class="panel-collapse collapse">
+           <ul class="menu-drop">
+             <li><a href="#" onclick="myFunction()">CSS Selectors</a></li>
+             <li><a href="#" onclick="myFunction()">CSS Layout Stuff</a></li>
+             <li>Three</li>
+           </ul>
+           </div>
+    </ul>
     </div>
 
     <div id="content">
@@ -163,6 +179,7 @@ function myFunction() {
 
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script src="lib\prism.js"></script>
@@ -188,6 +205,23 @@ function myFunction() {
       });
     });
   </script>
+  <script>
+  $(document).ready(function(){
+    $('.acc').click(function(){
 
+        var nextSibling = $(".panel > li");
+
+        if( $(".menu-drop");.is( ":hidden" ) ) {
+            $(".menu-drop").show();
+
+
+        }
+        else {
+          $(".menu-drop").hide();
+
+        }
+
+    });
+  });
 </body>
 </html>

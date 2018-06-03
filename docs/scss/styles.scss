@@ -21,7 +21,7 @@
 #menu-switch {
   height: 30px;
   width: 25px;
-  background-color: darken(#fff, 7%);
+  background-color: darken(#fff, 5%);
   position: absolute;
   left: 265px;
   top: 10px;
@@ -44,19 +44,20 @@ i.arrow-menu {
 }
 
 #side-bar {
-  background-color: darken(#fff, 7%);
+  background-color: darken(#fff, 5%);
   min-width: 300px;
   overflow-y: auto;
 
-  & a { color: black; font-size: 14px;}
+  & a { color: black; font-size: 14px; transition: 0.2s;}
+  & a:hover { color: #4a85de; font-size: 14px; text-decoration: none; }
 
   & p { padding-left: 37%; padding-top: 2em;}
   & ul.menu { padding: 2em 2.5em 2.5em 2.5em ; }
-  & ul.menu li{ padding-top: 0.5em; }
-  & ul.menu li:before { content: ''; }
-  & ul.menu-css { padding-left: 1em; }
-  & ul.menu-css li:before { content: '- '; }
+  & ul.menu li { padding-bottom: 0.8em; }
+  & ul.menu-drop li { padding-left: 0.5em; }
+  & ul.menu-drop li:before { content: '- '; }
 }
+
 
 #copyrights { text-align: center; font-size: 14px; }
 
@@ -75,9 +76,9 @@ i.arrow-menu {
   max-width: 860px;
   & p { padding-bottom: 0.5em; }
   & h2 { font-size: 28px; padding-bottom: 0.5em;}
-  & ul { 
-    padding: 1.5em; background-color:#fff7e6; 
-    border: 1px solid #ffebbc; margin-bottom: 1.5em; 
+  & ul {
+    padding: 1.5em; background-color:#fff7e6;
+    border: 1px solid #ffebbc; margin-bottom: 1.5em;
   }
   & ul li{ padding-top: 0.4em; }
   & ul li:first-child { padding-top: 0; }
