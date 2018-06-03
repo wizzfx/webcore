@@ -23,7 +23,8 @@
   width: 25px;
   background-color: darken(#fff, 7%);
   position: absolute;
-  left: 300px;
+  left: 265px;
+  top: 10px;
   &:hover { cursor: pointer; }
 }
 
@@ -72,14 +73,19 @@ i.arrow-menu {
   margin-top: 3em;
   width: auto;
   max-width: 860px;
-  & h2 { font-size: 28px; }
-  & ul { padding-top: 0.5em; }
-  & ul li{ padding-bottom: 0.4em; }
+  & p { padding-bottom: 0.5em; }
+  & h2 { font-size: 28px; padding-bottom: 0.5em;}
+  & ul { 
+    padding: 1.5em; background-color:#fff7e6; 
+    border: 1px solid #ffebbc; margin-bottom: 1.5em; 
+  }
+  & ul li{ padding-top: 0.4em; }
+  & ul li:first-child { padding-top: 0; }
 
 }
 
 
-.code-wrap { margin-top: 1em; }
+.code-wrap { }
  code, pre {
   width: auto;
 }

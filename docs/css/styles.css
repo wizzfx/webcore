@@ -429,12 +429,13 @@ i.arrow-menu {
   width: 25px;
   background-color: #ededed;
   position: absolute;
-  left: 300px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/webcore\/docs\/scss\/styles\.scss}line{font-family:\0000327}}
+  left: 265px;
+  top: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/webcore\/docs\/scss\/styles\.scss}line{font-family:\0000328}}
   #menu-switch:hover {
     cursor: pointer; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/webcore\/docs\/scss\/styles\.scss}line{font-family:\0000330}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/webcore\/docs\/scss\/styles\.scss}line{font-family:\0000331}}
 i.arrow-left {
   padding: 3px;
   position: relative;
@@ -442,78 +443,84 @@ i.arrow-left {
   transform: rotate(135deg);
   -webkit-transform: rotate(135deg); }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/webcore\/docs\/scss\/styles\.scss}line{font-family:\0000339}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/webcore\/docs\/scss\/styles\.scss}line{font-family:\0000340}}
 i.arrow-menu {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg); }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/webcore\/docs\/scss\/styles\.scss}line{font-family:\0000345}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/webcore\/docs\/scss\/styles\.scss}line{font-family:\0000346}}
 #side-bar {
   background-color: #ededed;
   min-width: 300px;
   overflow-y: auto; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/webcore\/docs\/scss\/styles\.scss}line{font-family:\0000350}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/webcore\/docs\/scss\/styles\.scss}line{font-family:\0000351}}
   #side-bar a {
     color: black;
     font-size: 14px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/webcore\/docs\/scss\/styles\.scss}line{font-family:\0000352}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/webcore\/docs\/scss\/styles\.scss}line{font-family:\0000353}}
   #side-bar p {
     padding-left: 37%;
     padding-top: 2em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/webcore\/docs\/scss\/styles\.scss}line{font-family:\0000353}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/webcore\/docs\/scss\/styles\.scss}line{font-family:\0000354}}
   #side-bar ul.menu {
     padding: 2em 2.5em 2.5em 2.5em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/webcore\/docs\/scss\/styles\.scss}line{font-family:\0000354}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/webcore\/docs\/scss\/styles\.scss}line{font-family:\0000355}}
   #side-bar ul.menu li {
     padding-top: 0.5em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/webcore\/docs\/scss\/styles\.scss}line{font-family:\0000355}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/webcore\/docs\/scss\/styles\.scss}line{font-family:\0000356}}
   #side-bar ul.menu li:before {
     content: ''; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/webcore\/docs\/scss\/styles\.scss}line{font-family:\0000356}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/webcore\/docs\/scss\/styles\.scss}line{font-family:\0000357}}
   #side-bar ul.menu-css {
     padding-left: 1em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/webcore\/docs\/scss\/styles\.scss}line{font-family:\0000357}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/webcore\/docs\/scss\/styles\.scss}line{font-family:\0000358}}
   #side-bar ul.menu-css li:before {
     content: '- '; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/webcore\/docs\/scss\/styles\.scss}line{font-family:\0000360}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/webcore\/docs\/scss\/styles\.scss}line{font-family:\0000361}}
 #copyrights {
   text-align: center;
   font-size: 14px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/webcore\/docs\/scss\/styles\.scss}line{font-family:\0000362}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/webcore\/docs\/scss\/styles\.scss}line{font-family:\0000363}}
 #content {
   overflow: auto;
   padding: 0em 2em 5em 2em;
   width: 100%;
   height: 100%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/webcore\/docs\/scss\/styles\.scss}line{font-family:\0000367}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/webcore\/docs\/scss\/styles\.scss}line{font-family:\0000368}}
   #content h1 {
     font-size: 32px;
     text-align: center;
     margin-top: 1em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/webcore\/docs\/scss\/styles\.scss}line{font-family:\0000370}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/webcore\/docs\/scss\/styles\.scss}line{font-family:\0000371}}
 .item {
   margin: 0 auto;
   margin-top: 3em;
   width: auto;
   max-width: 860px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/webcore\/docs\/scss\/styles\.scss}line{font-family:\0000375}}
-  .item h2 {
-    font-size: 28px; }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/webcore\/docs\/scss\/styles\.scss}line{font-family:\0000376}}
-  .item ul {
-    padding-top: 0.5em; }
+  .item p {
+    padding-bottom: 0.5em; }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/webcore\/docs\/scss\/styles\.scss}line{font-family:\0000377}}
-  .item ul li {
-    padding-bottom: 0.4em; }
-
+  .item h2 {
+    font-size: 28px;
+    padding-bottom: 0.5em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/webcore\/docs\/scss\/styles\.scss}line{font-family:\0000378}}
+  .item ul {
+    padding: 1.5em;
+    background-color: #fff7e6;
+    border: 1px solid #ffebbc;
+    margin-bottom: 1.5em; }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/webcore\/docs\/scss\/styles\.scss}line{font-family:\0000382}}
-.code-wrap {
-  margin-top: 1em; }
-
+  .item ul li {
+    padding-top: 0.4em; }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/webcore\/docs\/scss\/styles\.scss}line{font-family:\0000383}}
+  .item ul li:first-child {
+    padding-top: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/webcore\/docs\/scss\/styles\.scss}line{font-family:\0000389}}
 code, pre {
   width: auto; }
 
